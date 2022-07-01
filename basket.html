@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'basket/css/basket.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-11 offset-1 mt-2">
+            <h2>Shopping Basket ({{ product_count }})</h2>
+        </div>
+    </div>
+    <div class="row custom-margin">
+        <div class="col-sm-12 col-md-6">
+            <!-- Displays items in users basket -->
+            {% if basket_items %}
+                {% for item in basket_items %}
+                <div class="row basket-item">
+                    <hr>
+                    <div class="col-4 col-lg-2">
+                        {% if item.product.image %}
+                            <img class="img-fluid" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                        {% else %}
+                            <img class="img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                        {% endif %}
+                    </div>
+                    <div class="col-8 col-lg-10">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <a href="{% url 'product_detail' item.product.id %}" aria-label="Link to product detail page for this product">
+                                    <h3 id="basket-item-title">{{ item.product.name }}</h3>
+                                </a>
+                                <p class="caption">{% if item.product.has_sizes %}
+                                    Size: {{ item.size|upper }}
+                                    {% endif %}
+                                </p>
+                                <p class="caption">{% if item.product.sku %}SKU: {{ item.product.sku|upper }}{% endif %}</p>
+                            </div>
+                            <div class="col-8 col-lg-4">
+                                <!-- Modified from Batch Coffe details in README -->
+                                <form class="form update-form" action="{% url 'adjust_basket' item.item_id %}" method="POST">
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <!-- Quantity selector -->
+                                            <select class="form-control form-select mx-auto"
+                                                name="quantity" value="{{ item.quantity }}"
+                                                data-product_id="{{ item.product.id }}"
+                                                id="id_qty_{{ item.product.id }}">
+                                                <option value="1" {% if item.quantity == 1 %}selected{% endif %}>1
+                                                </option>
+                                                <option value="2" {% if item.quantity == 2 %}selected{% endif %}>2
+                                                </option>
+                                                <option value="3" {% if item.quantity == 3 %}selected{% endif %}>3
+                                                </option>
+                                                <option value="4" {% if item.quantity == 4 %}selected{% endif %}>4
+                                                </option>
+                                                <option value="5" {% if item.quantity == 5 %}selected{% endif %}>5
+                                                </option>
+                                                <option value="6" {% if item.quantity == 6 %}selected{% endif %}>6
+                                                </option>
+                                                <option value="7" {% if item.quantity == 7 %}selected{% endif %}>7
+                                                </option>
+                                                <option value="8" {% if item.quantity == 8 %}selected{% endif %}>8
+                                                </option>
+                                                <option value="9" {% if item.quantity == 9 %}selected{% endif %}>9
+                                                </option>
+                                                <option value="10" {% if item.quantity == 10 %}selected{% endif %}>10
+                                                </option>
+                                            </select>
+                                            {% if item.product.has_sizes %}
+                                            <input type="hidden" name="product_size" value="{{ item.size }}">
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- Allows users to update or remove items -->
+                                <a class="update-link small mt-2 float-start"
+                                    aria-label="Will update quantity of item in basket">Update</a>
+                                <a class="remove-item text-danger small mt-2 float-end" id="remove_{{ item.item_id }}"
+                                    data-product_size="{{ item.size }}"
+                                    aria-label="Will remove quantity of item from basket">
+                                    Remove
+                               </a>
+                            </div>
+                            <div class="col-12 col-xl-2 mt-2">
+                                <p>£{{ item.product.price }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="col-12 offset-1 offset-md-2">
+                    <p>Your basket is empty</p>
+                    <a href="{% url 'products' %}"  class="btn btn-grey" aria-label="Link back to products">
+                        Back to products
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+        <!-- Basket summary -->
+        <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="promo-div">
+                <p>Free UK delivery on orders over £100</p>
+                <p>Order by 9pm for Next Day Delivery</p>
+                <p>Free paperless returns</p>
+            </div>
+            {% if free_delivery_delta > 0 %}
+            <div class="free-delivery mb-2">
+                <p>
+                    Get free delivery if you spend <strong>£{{ free_delivery_delta }}</strong> more!
+                </p>
+            </div>
+            {% endif %}
+            <div class="basket-summary">
+                <p class="small">Sub-total: <span class="float-end"> £{{ total|floatformat:2 }}</span></p>
+                <p class="small">Delivery: <span class="float-end">£{{ delivery|floatformat:2 }}</span></p>
+                <hr>
+                <p class="custom-size mt-1">Total including vat<span class="float-end">£{{ grand_total|floatformat:2 }}</span></p>
+            </div>
+        <!-- Action buttons -->
+            <a href="{% url 'checkout' %}" class="btn btn-blue basket-buttons" aria-label="Link to checkout">
+                <span>Go to secure checkout</span>
+            </a>
+            <a href="{% url 'products' %}" class="btn btn-grey basket-buttons" aria-label="Link back to products">
+                Continue shopping
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<!-- Used from Boutique Ado, details in README -->
+<script>
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    });
+
+    // Remove item and reload on click
+    $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('product_size');
+        var url = `/basket/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    });
+</script>
+{% endblock %}
