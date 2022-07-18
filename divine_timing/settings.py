@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-cskt+70a@g$u@ybh1#$6*7x+28@ns1yh=a&7q*(tp((s=y*5k^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['divinetiming.herokuapp.com', 'localhost']
 
 
 # Application definition
