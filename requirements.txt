@@ -21,6 +21,7 @@ dill==0.3.5.1
 distlib==0.3.4
 Django==3.2.14
 django-allauth==0.51.0
+django-crispy-forms==1.14.0
 docutils==0.18.1
 entrypoints==0.4
 executing==0.8.3
