@@ -10,18 +10,258 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    The new collections are here
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                    </h4>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- ======== Feature ======== -->
+<section class="feature">
+    <div class="feature-heading">
+        <h2 class="heading-secondary">Exquisite Watches</h2>
+        <p class="text-paragraph">Most of our watches are handcrafted by the most talented watch makers on the planet</p>
+    </div> <!-- .feature-heading end -->
+    <div class="feature-container">
+        <div class="feature-card">
+            <img src="{% static './mediaicon/icon-1.png' %}" alt="">
+            <h3 class="heading-tertiary">Luxury</h3>
+            <p class="text-paragraph">Stand out from the crowd and own your own luxury watch</p>
+        </div> <!-- .feature-card end -->
+        <div class="feature-card">
+            <img src="{% static './media/icon/icon-2.png' %}" alt="">
+            <h3 class="heading-tertiary">Awesome Design</h3>
+            <p class="text-paragraph">Designed to be both Aesthetically pleasing and robust design.</p>
+        </div> <!-- .feature-card end -->
+        <div class="feature-card">
+            <img src="{% static './media/icon/icon-3.png' %}" alt="">
+            <h3 class="heading-tertiary">High Quality</h3>
+            <p class="text-paragraph">As well as our rolex, heiko collection. Our Digital watches that stand along the apple watches are made with the finest materials.</p>
+        </div> <!-- .feature-card end -->
+        <div class="feature-card">
+            <img src="{% static './media/icon/icon-4.png' %}" alt="">
+            <h3 class="heading-tertiary">User Friendly</h3>
+            <p class="text-paragraph">Our Smart watches have a great UI built in to help navigate all your apps on the go.</p>
+        </div> <!-- .feature-card end -->
+    </div> <!-- .feature-container end -->
+</section> <!-- .feature end -->
+
+<!-- ======== About ======== -->
+<section class="about">
+    <div class="about-container">
+        <div class="about-img">
+            <img src="{% static './media/about-product.png' %}" alt="">
+        </div> <!-- .about-img end -->
+        <div class="about-content">
+            <div class="about-heading">
+                <h2 class="heading-secondary">About Product</h2>
+                <p class="text-paragraph">With our latest Black Fire Watch, you will be able to automate meetings on the go, access apps such as instagram and whatsapp, and have phone calls.</p>
+            </div> <!-- .about-content end -->
+            <div class="points">
+                <div class="point">
+                    <img src="{% static './media/tick.svg' %}" alt="">
+                    <p class="text-paragraph">Sleep Quality Monitor</p>
+                </div> <!-- .point end -->
+                <div class="point">
+                    <img src="{% static './media/tick.svg' %}" alt="">
+                    <p class="text-paragraph">Latest Technology</p>
+                </div> <!-- .point end -->
+                <div class="point">
+                    <img src="{% static './media/tick.svg' %}" alt="">
+                    <p class="text-paragraph">Easy to Customize</p>
+                </div> <!-- .point end -->
+                <div class="point">
+                    <img src="{% static './media/tick.svg' %}" alt="">
+                    <p class="text-paragraph">Lightweight design</p>
+                </div> <!-- .point end -->
+                <div class="point">
+                    <img src="{% static './media/tick.svg' %}" alt="">
+                    <p class="text-paragraph">High Quality Design</p>
+                </div> <!-- .point end -->
+                <div class="point">
+                    <img src="{% static './media/tick.svg' %}" alt="">
+                    <p class="text-paragraph">Stainless steel frame</p>
+                </div> <!-- .point end -->
+            </div> <!-- .points end -->
+        </div> <!-- .about-content end -->
+    </div> <!-- .about-container end -->
+</section> <!-- .about end -->
+
+<!-- ======== Showcase ======== -->
+<section class="showcase">
+    <div class="showcase-container">
+        <div class="showcase-content">
+            <div class="showcase-heading">
+                <h2 class="heading-secondary">Awesome Digital Watch Can Make Your Life Easier</h2>
+                <p class="text-paragraph">With our White Ice Watch collection, you can use this for your day to day tasks while on your trips to help you manage.</p>
+            </div> <!-- .showcase-heading end -->
+            <div class="points">
+                <div class="point">
+                    <img src="{% static './media/tick.svg' %}" alt="">
+                    <p class="text-paragraph">Sleep Quality Monitor</p>
+                </div> <!-- .point end -->
+                <div class="point">
+                    <img src="{% static './media/tick.svg' %}" alt="">
+                    <p class="text-paragraph">Unlimited users & Social network interface</p>
+                </div> <!-- .point end -->
+                <div class="point">
+                    <img src="{% static './media/tick.svg' %}" alt="">
+                    <p class="text-paragraph">Heart Rate Monitor & Step Counter</p>
+                </div> <!-- .point end -->
+                <div class="point">
+                    <img src="{% static './media/tick.svg' %}" alt="">
+                    <p class="text-paragraph">Wi-Fi Data Sync and Weather Update</p>
+                </div> <!-- .point end -->
+                <div class="point">
+                    <img src="{% static './media/tick.svg' %}" alt="">
+                    <p class="text-paragraph">Unlimited users & Social network interface</p>
+                </div> <!-- .point end -->
+                <div class="point">
+                    <img src="{% static './media/tick.svg' %}" alt="">
+                    <p class="text-paragraph">Stainless steel frame</p>
+                </div> <!-- .point end -->
+            </div> <!-- .points end -->
+        </div> <!-- .showcase-content end -->
+        <div class="showcase-img">
+            <img src="{% static './media/showcase.png' %}" alt="">
+        </div> <!-- .showcase-img end -->
+    </div> <!-- .showcase-container end -->
+</section> <!-- .showcase end -->
+
+<!-- ======== Product ======== -->
+<section class="product">
+    <div class="product-heading">
+        <h2 class="heading-secondary">Our Awesome Products</h2>
+        <p class="text-paragraph">Take a peek at some of the selection of our awesome watches!</p>
+    </div> <!-- .product-heading end -->
+    <div class="product-container">
+        <!-- Swiper -->
+        <div class="swiper product-items">
+            <div class="swiper-wrapper product-items">
+                <div class="swiper-slide product-item">
+                    <div class="product-card">
+                        <img src="{% static './media/product-1.png' %}" alt="">
+                        <h3 class="heading-tertiary">Watch A03</h3>
+                        <h4 class="price heading-tertiary">$200</h4>
+                        <a href="" class="btn btn-primary product-card-btn">Buy Now</a>
+                    </div> <!-- .product-card end -->
+                </div> <!-- .product-item end -->
+                <div class="swiper-slide product-item">
+                    <div class="product-card">
+                        <img src="{% static './media/product-2.png' %}" alt="">
+                        <h3 class="heading-tertiary">Watch A04</h3>
+                        <h4 class="price heading-tertiary">$200</h4>
+                        <a href="" class="btn btn-primary product-card-btn">Buy Now</a>
+                    </div> <!-- .product-card end -->
+                </div> <!-- .product-item end -->
+                <div class="swiper-slide product-item">
+                    <div class="product-card">
+                        <img src="{% static './media/product-3.png' %}" alt="">
+                        <h3 class="heading-tertiary">Watch A05</h3>
+                        <h4 class="price heading-tertiary">$200</h4>
+                        <a href="" class="btn btn-primary product-card-btn">Buy Now</a>
+                    </div> <!-- .product-card end -->
+                </div> <!-- .product-item end -->
+                <div class="swiper-slide product-item">
+                    <div class="product-card">
+                        <img src="{% static './media/product-4.png' %}" alt="">
+                        <h3 class="heading-tertiary">Watch A06</h3>
+                        <h4 class="price heading-tertiary">$200</h4>
+                        <a href="" class="btn btn-primary product-card-btn">Buy Now</a>
+                    </div> <!-- .product-card end -->
+                </div> <!-- .product-item end -->
+                <div class="swiper-slide product-item">
+                    <div class="product-card">
+                        <img src="{% static './media/product-5.png' %}" alt="">
+                        <h3 class="heading-tertiary">Watch A07</h3>
+                        <h4 class="price heading-tertiary">$200</h4>
+                        <a href="" class="btn btn-primary product-card-btn">Buy Now</a>
+                    </div> <!-- .product-card end -->
+                </div> <!-- .product-item end -->
+            </div> <!-- .product-items end -->
+        </div> <!-- .product-items end -->
+    </div> <!-- .product-container end -->
+</section> <!-- .product end -->
+
+<!-- ======== Newsletter ======== -->
+<section class="newsletter">
+    <div class="newsletter-container">
+        <div class="newsletter-heading">
+            <h2 class="heading-secondary">Subscribe Our Newsletter</h2>
+            <p class="text-paragraph">Get regular updates for launches of our upcoming watches, sales and information on the behind the scenes of Divine timing watch making.
+            </p>
+        </div> <!-- .newsletter-heading end -->
+        <div class="newsletter-email">
+            <input type="text" class="newsletter-input">
+            <a href="" class="btn newsletter-btn">Sign Up</a>
+        </div> <!-- .newsletter-email end -->
+    </div> <!-- .newsletter-container end -->
+</section> <!-- .newsletter end -->
+
+<!-- ======== Testimonial ======== -->
+<section class="testimonial">
+    <div class="testimonial-heading">
+        <h2 class="heading-secondary">Our Customer Feedback</h2>
+        <p class="text-paragraph">Some reviews from our loyal customers that have enjoyed their Watches.
+        </p>
+    </div> <!-- .testimonial-heading end -->
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <img src="{% static './media/testi-1.png' %}" alt="">
+            <p class="text-paragraph">“ They work <b>perfectly</b> and I'm very pleased with the decision to get
+                these. Thanks for a <b>great product!</b> “</p>
+            <div class="rating">
+                <img src="{% static './media/icon/Star-fill.svg' %}" alt="">
+                <img src="{% static './media/icon/Star-fill.svg' %}" alt="">
+                <img src="{% static './media/icon/Star-fill.svg' %}" alt="">
+                <img src="{% static './media/icon/Star-fill.svg' %}" alt="">
+                <img src="{% static './media./icon/start-half-fill.svg' %}" alt="">
+                <img src="{% static './media/icon/Star-empty.svg' %}" alt="">
+            </div> <!-- .rating end -->
+        </div> <!-- .testimonial-card end -->
+
+        <div class="testimonial-card">
+            <img src="{% static './media/testi-2.png' %}" alt="">
+            <p class="text-paragraph">“ They work <b>perfectly</b> and I'm very pleased with the decision to get
+                these. Thanks for a <b>great product!</b> “</p>
+            <div class="rating">
+                <img src="{% static './media/icon/Star-fill.svg' %}" alt="">
+                <img src="{% static './media/icon/Star-fill.svg' %}" alt="">
+                <img src="{% static './media/icon/Star-fill.svg' %}" alt="">
+                <img src="{% static './media/icon/Star-fill.svg' %}" alt="">
+                <img src="{% static './media/icon/start-half-fill.svg' %}" alt="">
+                <img src="{% static './media/icon/Star-empty.svg' %}" alt="">
+            </div> <!-- .rating end -->
+        </div> <!-- .testimonial-card end -->
+
+        <div class="testimonial-card">
+            <img src="{% static './media/testi-3.png' %}" alt="">
+            <p class="text-paragraph">“ They work <b>perfectly</b> and I'm very pleased with the decision to get
+                these. Thanks for a <b>great product!</b> “</p>
+            <div class="rating">
+                <img src="{% static './media/icon/Star-fill.svg' %}" alt="">
+                <img src="{% static './media/icon/Star-fill.svg' %}" alt="">
+                <img src="{% static './media/icon/Star-fill.svg' %}" alt="">
+                <img src="{% static './media/icon/Star-fill.svg' %}" alt="">
+                <img src="{% static './media/icon/start-half-fill.svg' %}" alt="">
+                <img src="{% static './media/icon/Star-empty.svg' %}" alt="">
+            </div> <!-- .rating end -->
+        </div> <!-- .testimonial-card end -->
+
+    </div> <!-- .testimonial-container end -->
+</section> <!-- .testimonial end -->
+
+<!-- ======== Final - cta ======== -->
+<section class="final-cta">
+    <div class="final-cta-container">
+        <div class="final-cta-container">
+            <div class="final-cta-content">
+                <h2 class="heading-secondary">
+                    The ultimate deal on White Ice Smart Watch
+                </h2>
+                <p class="text-paragraph">Charge only for 10 minutes and listen to blissful audio for 10 hours! With
+                    ASAP Fast Charge, guess who will be your binge-watching partner from now? </p>
+                <a href="" class="btn btn-primary">Order Now</a>
+            </div> <!-- .final-cta-content end -->
+            <div class="final-cta-img">
+                <img src="{% static './media/final-cta.png' %}" alt="" />
+            </div> <!-- .final-cta-img end -->
+        </div> <!-- .final-cta-container end -->
+    </div> <!-- .final-cta-container end -->
+</section> <!-- .final-cta end -->
 {% endblock %}

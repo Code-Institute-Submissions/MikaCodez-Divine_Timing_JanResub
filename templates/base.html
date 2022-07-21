@@ -5,18 +5,42 @@
   <head>
 
     {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="Your title">
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG (Open Graph) meta tags to control how URLs are displayed when shared on social media. -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:type" content="website" /> <!-- Type of object you’re sharing. (e.g., article, website, etc.) -->
+    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- A brief description of the content. -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- social meta tag that are exclusively used for Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Divine Timing - Product Landing Page </title>
+
+    
     {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
 
     {% block corecss %}
+        <!-- styles -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css.map' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> <!-- Swiper JS CSS cdn link -->
     {% endblock %}
 
     {% block extra_css %}
@@ -37,12 +61,26 @@
     <title>Boutique Ado {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top">
+
+<!-- ======== Header ======== -->
+<header class="header">
+    <div class="header-content">
+        <h3 class="logo" a href="{% url 'home' %}" class="nav-link main-logo-link">Divine Timing.</h3></a>
+        <h1 class="heading-primary">Smart Digital <br> Watch For <br> Luxurious Life</h1>
+        <p class="primary-text">Check out our new brand of smart watches! Selected to help time your daily life! </p>
+        <a href="shop.html" class="btn btn-primary">Buy Now</a>
+    </div> <!-- .header-content end -->
+    <div class="header-img">
+        <!-- <div></div> -->
+        <picture>
+            <source media="(min-width: 900px)" srcset="{% static './media/header-img-desktop.png' %}">
+            <source media="(max-width: 900px)" srcset="{% static './media/header-img-mobile.png' %}">
+            <img src="{% static './media/header-img-desktop.png' %}" alt="smartwatch image">
+        </picture>
+    </div> <!-- .header-img end -->
+
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>Boutique</strong> Ado</h2>
-                </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
@@ -81,7 +119,7 @@
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                        <!-- <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}"> -->
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
@@ -111,7 +149,7 @@
                 <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
             </div>            
         </div>
-    </header>
+</header> <!-- .header end -->
 
     {% if messages %}
         <div class="message-container">
@@ -136,8 +174,42 @@
 
     {% block content %}
     {% endblock %}
+<!-- ======== Footer ======== -->
+<div class="footer">
+    <p class="text-paragraph">Design & Code by <a href="https://malczcodez.online/">Malcolm Wiredu</a>, Copyright
+        &copy;2022, All Right Reserved</p>
+</div> <!-- .footer end -->
+
 
     {% block postloadjs %}
+    <!-- scripts -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+
+        breakpoints: {
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            },
+            900: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            750: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            }
+        }
+
+    });
+</script>
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
