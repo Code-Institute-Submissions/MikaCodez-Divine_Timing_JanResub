@@ -20,8 +20,8 @@ decorator==5.1.1
 defusedxml==0.7.1
 dill==0.3.5.1
 distlib==0.3.4
-dj-database-url==0.5.0
-Django==3.2.14
+dj-database-url==1.0.0
+Django==4.0.6
 django-allauth==0.51.0
 django-countries==7.3.2
 django-crispy-forms==1.14.0
@@ -76,6 +76,7 @@ platformdirs==2.5.2
 prometheus-client==0.14.1
 prompt-toolkit==3.0.29
 psutil==5.9.1
+psycopg2-binary==2.9.3
 ptyprocess==0.7.0
 pure-eval==0.2.2
 pycodestyle==2.8.0
