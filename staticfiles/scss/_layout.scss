@@ -1,0 +1,498 @@
+// class which is used for multiple time
+.points{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+
+    & .point{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-weight: bold;
+    }
+}
+
+// header
+.header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include respond(tab-port){
+        gap: 40px;
+        flex-direction: column;
+    }
+    &-content{
+        width: 100%;
+        height: 100%;
+        padding: 50px 50px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        @include respond(phone){
+            padding: 30px 25px;
+            padding-bottom: 10px;
+        }
+    }
+    &-img{
+        width: auto;
+        font-size: 0;
+        position: relative;
+
+        // Don't know why i'm using ::before here , just want to overlay  above the image : )
+        &::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: transparent
+        }
+        @include respond(tab-port){
+            width: 100%;
+        }
+        & img{
+          @include respond(tab-port){
+              width: 100%;
+          }
+        }
+    }
+}
+// section - feature
+.feature{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #FAFAFA;
+
+    &-heading{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding-bottom: 60px;
+        @include respond(tab-port){
+            width: 80%;
+        }
+    }
+    &-container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        @include respond(tab-port){
+            flex-direction: column;
+        }
+    }
+    &-card{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        & img{
+            width: 60px;
+            border-radius: 50%;
+            transition: .15s;
+            border: 2px solid transparent;
+
+            &:hover{
+                border: 2px solid #ff5e79;
+            }
+            @include respond(phone){
+                width: 45px;
+            }
+        }
+    }
+}
+
+// section - about
+.about{
+    width: 100%;
+    padding-top: 30px;
+    background-color: #f3f3f3;
+
+    &-container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+
+        @include respond(tab-port){
+            gap: 0px;
+            flex-direction: column;
+            padding-bottom: 30px;
+        }
+    }
+    &-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img{
+            width: 400px;
+            @include respond(phone){
+                width: 100%;
+            }
+        }
+    }
+    &-content{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 40px;
+        @include respond(phone){
+            padding:0 20px; 
+        }
+    }
+    &-heading{
+        text-align: left;
+        
+        & p{
+            margin-top: 20px;
+        }
+    }
+}
+// section - showcase
+.showcase{
+    width: 100%;
+    padding-top: 30px;
+    background-color: #fff;
+
+    &-container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+
+        @include respond(tab-port){
+            gap: 0px;
+            flex-direction: column;
+            padding-bottom: 30px;
+        }
+    }
+    &-img{
+        width: 100%;
+       
+        @include respond(tab-port){
+            order: 1;
+        }
+        & img{
+            width: 500px;
+            @include respond(phone){
+                width: 100%;
+            }
+        }
+    }
+    &-content{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 40px;
+        @include respond(tab-port){
+            order: 2;
+        }
+        @include respond(phone){
+            padding:0 20px; 
+        }
+    }
+    &-heading{
+        text-align: left;
+        
+        & p{
+            margin-top: 20px;
+        }
+    }
+}
+
+// section - product
+.product{
+    width: 100%;
+    background-color: #F5F5F5;
+    padding:30px 0;
+    // height: 90vh;
+
+    &-heading{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding-bottom: 60px;
+        @include respond(tab-port){
+            width: 80%;
+            padding-bottom: 30px;
+        }
+    }
+    &-container{
+        width: 90%;
+        margin: 0 auto;
+        height: 100%;
+        @include respond(phone){
+            padding: 20px;
+        }
+    }
+    &-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-card{
+        width: 280px;
+        height: 400px;
+        box-shadow: 0px 4px 12px rgba(24, 24, 24, 0.05);
+        border-radius: 5px;
+        border: 1px solid #E4E4E4;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        @include respond(phone){
+            width: 100%;
+        }
+
+        & h3{
+            font-style: italic;
+        }
+        & .price{
+            font-style: italic;
+            color: #4768AA;
+        }
+        &-btn{
+            width: 125px !important;
+            padding: 7px !important;
+        }
+    }
+
+}
+
+// newsletter
+.newsletter{
+    width: 100%;
+    padding: 40px 0;
+    background-color: #FF6E86;
+    &-heading{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+        & h2, p{
+            color: #EBEBEB;
+            text-align: left;
+            font-weight: normal;
+        }
+    }
+    &-container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        @include respond(tab-port){
+            flex-direction: column;
+        }
+    }
+    &-email{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    &-input{
+        width: 40%;
+        outline: none;
+        border: none;
+        background-color: #EBEBEB;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 18px;
+        @include respond(phone){
+            width: 80%;
+            padding: 8px;
+            font-size: 16px;
+        }
+        &:active, &:focus{
+            outline: 0;
+        }
+    }
+    &-btn{
+        background-color: #3EF9DA;
+        color: #fff;
+        font-weight: bold;
+        box-shadow: inset 0px 4px 4px rgba(81, 81, 81, 0.25);
+        filter: drop-shadow(0px 4px 4px rgba(41, 41, 41, 0.05));
+        border-radius: 5px;
+        width: 150px;
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+
+        @include respond(phone){
+            font-size: 16px;
+            width: 120px;
+            padding: 8px;
+        }
+    }
+}
+
+// testimonial
+.testimonial{
+    width: 100%;
+    padding: 30px 0;
+    background-color:#F3F3F3;
+    &-heading{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding-bottom: 60px;
+
+        @include respond(tab-port){
+            width: 80%;
+        }
+    }
+    &-container{
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+
+        @include respond(tab-port){
+            flex-direction: column;
+            padding:0 10px;
+        }
+        @include respond(phone){
+            width: 90%;
+        }
+    }
+    &-card {
+        max-width: 340px;
+        width: 100%;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px solid #E4E4E4;
+        box-shadow: 0px 4px 12px rgba(24, 24, 24, 0.05);
+        @include respond(tab-port){
+            flex-direction: column;
+            gap: 30px;
+        }
+        & p{ 
+            width: 80%;
+            text-align: center;
+            font-style: italic;
+        }
+        & .rating{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        & > img{
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
+        }
+    }
+}
+
+
+.final-cta{
+    width: 100%;
+    padding: 30px 0;
+    background-color: #fff;
+    
+    &-container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+
+        @include respond(tab-port){
+            flex-direction: column;
+        }
+        @include respond(phone){
+            flex-direction: column;
+        }
+    }
+    &-content{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        flex-direction: column;
+        @include respond(tab-port){
+            order: 2;
+        }
+    }
+    &-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img{
+            width: 80%;
+        }
+        @include respond(tab-port){
+            order: 1;
+        }
+    }
+}
+
+.footer{
+    width: 90%;
+    margin: auto;
+    padding: 30px 20px;
+    text-align: center;
+    & p{
+        text-align: center;
+        font-size: 16px;
+    }
+}

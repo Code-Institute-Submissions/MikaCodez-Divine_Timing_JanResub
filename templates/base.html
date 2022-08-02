@@ -53,28 +53,10 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Boutique Ado {% block extra_title %}{% endblock %}</title>
+    <title>Divine Timing. {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-
-<!-- ======== Header ======== -->
-<header class="header">
-    <div class="header-content">
-        <h3 class="logo" a href="{% url 'home' %}" class="nav-link main-logo-link">Divine Timing.</h3></a>
-        <h1 class="heading-primary">Smart Digital <br> Watch For <br> Luxurious Life</h1>
-        <p class="primary-text">Check out our new brand of smart watches! Selected to help time your daily life! </p>
-        <a href="{% url 'products' %}" class="btn btn-primary">Buy Now</a>
-    </div> <!-- .header-content end -->
-    <div class="header-img">
-        <!-- <div></div> -->
-        <picture>
-            <source media="(min-width: 900px)" srcset="{% static './media/header-img-desktop.png' %}">
-            <source media="(max-width: 900px)" srcset="{% static './media/header-img-mobile.png' %}">
-            <img src="{% static './media/header-img-desktop.png' %}" alt="smartwatch image">
-        </picture>
-    </div> <!-- .header-img end -->
-
-        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+      <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
