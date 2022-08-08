@@ -3,6 +3,7 @@ html {
 }
 
 
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -14,6 +15,7 @@ html {
 
 .logo-font {
     text-transform: uppercase;
+    color: #ffa197;
 }
 
 .main-logo-link {

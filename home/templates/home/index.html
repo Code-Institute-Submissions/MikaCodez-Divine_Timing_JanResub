@@ -1,32 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
 
 {% block content %}
-<!-- ======== Header ======== -->
-<header class="header">
-    <div class="header-content">
-        <h3 class="logo" a href="{% url 'home' %}" class="nav-link main-logo-link">Divine Timing.</h3></a>
-        <h1 class="heading-primary">Smart Digital <br> Watch For <br> Luxurious Life</h1>
-        <p class="primary-text">Check out our new brand of smart watches! Selected to help time your daily life! </p>
-        <a href="{% url 'products' %}" class="btn btn-primary">Buy Now</a>
-    </div> <!-- .header-content end -->
-    <div class="header-img">
-        <!-- <div></div> -->
-        <picture>
-            <source media="(min-width: 900px)" srcset="{{ MEDIA_URL }}header-img-desktop.png">
-            <source media="(max-width: 900px)" srcset="{{ MEDIA_URL }}header-img-mobile.png">
-            <img src="{{ MEDIA_URL }}header-img-desktop.png" alt="smartwatch image">
-        </picture>
-    </div> <!-- .header-img end -->
-    
+  
 <!-- ======== Feature ======== -->
 <section class="feature">
     <div class="feature-heading">
@@ -47,7 +24,8 @@
         <div class="feature-card">
             <img src="{{ MEDIA_URL }}icon-3.png" alt="">
             <h3 class="heading-tertiary">High Quality</h3>
-            <p class="text-paragraph">As well as our rolex, heiko collection. Our Digital watches that stand along the apple watches are made with the finest materials.</p>
+            <p class="text-paragraph">Our Digital watches stand along the apple watches
+                and are made with the finest materials.</p>
         </div> <!-- .feature-card end -->
         <div class="feature-card">
             <img src="{{ MEDIA_URL }}icon-4.png" alt="">
@@ -135,6 +113,8 @@
         </div> <!-- .showcase-content end -->
         <div class="showcase-img">
             <img src="{{ MEDIA_URL }}showcase.png" alt="">
+            <br>
+            <br>
         </div> <!-- .showcase-img end -->
     </div> <!-- .showcase-container end -->
 </section> <!-- .showcase end -->
