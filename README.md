@@ -41,6 +41,7 @@ Agile Methodology was used via Github Projects Kanban board in order to create u
 | #21 | Edit/update a product | Admin App |
 | #22 | Delete a product  | Admin App |
 
+![Kanban Board](https://user-images.githubusercontent.com/65243328/184502572-72f29e53-1d57-442c-a0d9-1308e92fc290.JPG)
 
 ### Purpose
 The Application is designed as an eccomerce Watch and Jewelry store to attract users and purchase the products online via the store.
@@ -50,84 +51,68 @@ They will be sent the uxury items to their address once purchased.
 ### Colours
 
 
-![coolors ghit]
-
-#000002 Rich Black used Gradient for the main bulk of the site. To give the clean aesthetic.
+![divinetiming](https://user-images.githubusercontent.com/65243328/184502587-e0d671b3-d77c-4e0a-98d1-0fbda6783322.png)
 
 
-#59CBCF Dark Turquoise for the Buttons on the site to help them stand alone.
+#000000 Black used for the main grid lines of the site. To give the clean aesthetic.
 
 
-#DED9D9 Gainsboro for the intermediary positions of the site to help create balance.
+#BC2B3F Cardinal for the featured sections of the site
 
 
-#D4CE91 Medium Champagne on the menu sections of the website to help the food and drinks stand out.
+#0E0D0F Rich Black Fogra for the some of the products on the site
 
 
-#446D03 Dark Olive Green on some of the vegetables of the website.
-
-
-#25252F Raisin Black on the Gradient of the main bulk of the site.
-
-
-#FCFBF8 Baby powder on the intermediary positions of the site to help create balance.
+#F93D5C Radical red for text on some of the main sections of the site i.e. logo and products.
 
 
 
 ## Features
 Home Page
 
-The home page has an attractive layout to keep the user engaged and enticed for what's to come when they eventually visit the restaurant . The page has a Navigation bar that links to other sections of the site and buttons on the page that link straight to the booking. If the user is not a registered user and not logged in. The navbar has a login/register option and the button to take the user to the login page.
+The home page has an attractive layout that is bright and iniviting. It also hosts a review section of previous customers and additional information on the features of the digital watches. The page has a Navigation bar that links to other sections of the site and buttons on the page that link straight to the profile and orders of the customer. If the user is not a registered user and not logged in. The navbar has a login/register option and the button to take the user to the login page.
 
-![ghit homepage 1](https://user-images.githubusercontent.com/65243328/173861087-271f5dea-b433-496e-af98-14ff760ebd47.JPG)
-![ghit homepage 2](https://user-images.githubusercontent.com/65243328/173861110-80353367-fc31-4db5-a7bb-75092602b769.JPG)
-
-Menu Page
-
-The Menu Page has an eye-catching layout to keep the user engaged and enticed for what's to come when they eventually visit the restaurant displaying a variety of options for the user to choose from.
+![divin1](https://user-images.githubusercontent.com/65243328/184503091-c1ba9f57-1e34-4c04-9f55-e1473179f33b.JPG)
+![divin2](https://user-images.githubusercontent.com/65243328/184503098-ed260371-6b5a-4d6b-95a4-51714281714c.JPG)
 
 
-![ghit menu page](https://user-images.githubusercontent.com/65243328/173861128-5b934c14-537e-46d2-9702-c3a8d0fead54.JPG)
-![ghit menu page 2](https://user-images.githubusercontent.com/65243328/173861118-ec841d7e-45ed-4255-9323-93df870a2980.JPG)
+product Page
 
-Booking Page
+the product Page is a simple page that is not distracting for the user and catches their eye right away with a list of various products users can buy.
+Ranging from watches, to glasses and watch straps.
 
-The Booking Page is where the user can input the date and time they want to visit the restaurant. There is also a form to leave their details for the Restaurant so the admin is aware of the user's requirements.
+![products1](https://user-images.githubusercontent.com/65243328/184503147-b549f2e3-d8e7-42bb-8cb7-91a0902a154d.JPG)
+![products2](https://user-images.githubusercontent.com/65243328/184503156-ebb231a2-5a85-472c-b650-c50c7b560018.JPG)
 
-The Booking page also has a Google maps location of the Restaurant to help assist users in locating the restaurant for when they show up.
 
-![ghit booking page 1](https://user-images.githubusercontent.com/65243328/173861149-75f4f125-76f1-4f06-92e5-1d80bb7cb37c.JPG)
-![ghit booking page 2](https://user-images.githubusercontent.com/65243328/173861157-cde02af1-7dc9-43c1-8395-16844474867a.JPG)
-![ghit booking page 3](https://user-images.githubusercontent.com/65243328/173861164-4330d63d-68f4-4a9f-9cb8-f80c16dc265d.JPG)
+
+Profile Page
+
+The Profile page will contain the details of user that is logged in and a list of all their previous purchases and order history.
+
+![prof1](https://user-images.githubusercontent.com/65243328/184503298-9f10dcbc-8357-4ae9-acd4-962558c1966c.JPG)
 
 
 Login Page / Sign up Page
 
-Allowing new users to sign up to the site to manage reservations and existing users to log in and manage their reservations also.
-![usersignintesting](https://user-images.githubusercontent.com/65243328/176655079-8f78e6cf-bb15-471b-ae54-975e6edec918.JPG)
-![userregistertesting](https://user-images.githubusercontent.com/65243328/176655117-3a53fdd5-ec12-49da-b927-e99bd7892f9b.JPG)
+Allowing new users to sign up to the site to purchase products and existing users to log back in and purchase more or check their order history.
+
+![signup1](https://user-images.githubusercontent.com/65243328/184503345-51ff929e-5b9a-4f99-a2b7-c6574fa5170b.JPG)
+![signup2](https://user-images.githubusercontent.com/65243328/184503353-6264c334-1ece-41e7-af6b-8f90fd1567df.JPG)
 
 
-Manage Reservation page
+Manage Products page
 
-Allowing existing users to View and Manage their reservations that have been approved by the Admin.
+Allowing Admins to add/edit/delete products as they see fit.
 
-Edit a Reservation
+![prodmanage1](https://user-images.githubusercontent.com/65243328/184503537-d0fa30d1-347e-466c-b6d3-fb1ebe14db46.JPG)
 
-Allowing existing users to make changes to their approved existing reservation.
-
-Delete a Reservation
-
-Allowing existing users to delete their approved existing reservation.
-
-![update delete reservations](https://user-images.githubusercontent.com/65243328/176655229-030d667c-92d3-4155-9472-c826262efeaf.JPG)
+![prodmanage2](https://user-images.githubusercontent.com/65243328/184503543-0320b9ed-02fb-4349-8341-d7ed8090c69b.JPG)
 
 
 ## Future Features
 
-Allowing Bookings to be set up so that it directly links to the reservation page rather than it being sent to GHIT staff mailbox.
 
-Allowing users to be able to have a delivery future and order directly from the menu of the site.
 
 
 ## Testing
@@ -189,7 +174,7 @@ Making a local clone Locate the GitHub repository. Link can be found here. Next 
 
 
 ## Technologies Used
-Python All packages used can be found in the [requirements.txt](https://github.com/MikaCodez/GHITrestaurant/blob/main/requirements.txt) File.
+Python All packages used can be found in the [requirements.txt](https://github.com/MikaCodez/Divine_Timing/blob/main/requirements.txt) File.
 HTML - Used for the template structures.
 CSS - Used to style the markup.
 Javascript - Custom use minimal, to set a timeout on bootstrap messages.
@@ -203,7 +188,7 @@ Bootstrap - grid, layout, columns, cards and forms structure.
 Heroku - for the deployment of the project.
 Coolors - to choose the colour palette and colour shades.
 PostgreSQL - database storage of the models.
-Cloudinary - image and static files storage.
+AWS - image and static files storage.
 AmIResponsive - responsiveness of the site.
 Lighthouse - used for testing site functionality.
 PEP8 - used for Python files testing.
@@ -212,7 +197,8 @@ W3C CSS Validation Service - used for CSS testing
 
 ## Resources
 Code Institute's Slack Community.
-Code Institute's Codestar Django Blog was used in the beginning stages of the development of this project. 
+Code Institute's Codestar Django Blog was used in the beginning stages of the development of this project.
+Code Institute's Boutique Ado app was used as a base for the products and navigation
 Django Documentation - Heavy Reliance on Django documentation to implement forms, models, views etc.
 W3Schools documentation for CSS
 Bootstrap Documentation - For implementing Bootstrap styles across project
@@ -223,12 +209,12 @@ Youtube - Also Heavy Reliance on youtube tutorials from Codemy.com and Pretty Pr
 
 ## Credits
 
-SCOPE code credits to Code Institute, Django Blog Walkthrough Project. HTML template credit to Lucian Tartea. I have amended the code to my Restaurant sites specification.
+SCOPE code credits to Code Institute, Boutique Ado Walkthrough Project. HTML template credit to Nikhil. I have amended the code to my Eccomerce sites specification.
 
-Credits also due to Code Institute staff for helping especially Tutor Support. Special Shout out to Rebecca, Scott and Alex. I relied on them heavily during Crunch time and they pulled through and managed to help me when I was at breaking points.
+Credits also due to Code Institute staff for helping especially Tutor Support.
 
-Also special shouts to Tom from Slack Community. Life Save and helped guide me when it came to implementing Static files for my project.
+Images for Reviews taken from [Unsplash.](https://unsplash.com/)
 
-And a Major Shout out to my Wife CleliaMente! Best Life Partner that I could ask for that helped inspire this project and encouraged me to push through!!
+Images taken for products from various watch stores: [Rolex](https://www.rolex.com/en-us), [Jomashop](https://www.jomashop.com/), [sunglasseshut](http://sunglasseshut.com/), [strapsco](https://strapsco.com/), [monkey glasses](https://www.monkeyglasses.com/)
 
 
