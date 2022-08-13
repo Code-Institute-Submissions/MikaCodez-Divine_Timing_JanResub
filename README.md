@@ -110,7 +110,18 @@ Allowing Admins to add/edit/delete products as they see fit.
 ![prodmanage2](https://user-images.githubusercontent.com/65243328/184503543-0320b9ed-02fb-4349-8341-d7ed8090c69b.JPG)
 
 
-## Future Features
+## SEO and Web marketing
+various SEO techniques where put in place to help make the searches of the site much better with implementation of meta tags throughout the pages. 
+Adding a sitemap.xml and robots.txt file aswell to be submitted to google for better quality search engine optimisation.
+
+I have also included a facebook page which links to the site. Users can take part in the social aspect of the site and stay updated on the page, aswell as the facebook page linking directly to the site for users to be able to purchase.
+
+[Facebook page here](https://www.facebook.com/Divine-Timing-101174169382750)
+
+
+![facebook page 1](https://user-images.githubusercontent.com/65243328/184504311-6f0135e0-4746-442c-a437-c4f1a293d01e.JPG)
+![facebook page 2](https://user-images.githubusercontent.com/65243328/184504315-3c347253-76a8-444d-8285-7c3fbddcfa30.JPG)
+![facebook page 3](https://user-images.githubusercontent.com/65243328/184504349-79990ec1-cb55-49de-8750-83f6aa0aedf5.JPG)
 
 
 
