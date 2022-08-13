@@ -8,10 +8,10 @@ Divine Timing is an Eccommerce store that specialises in handcraft digital watch
 
 ## UX
 ### Users
-The user should be able to interact with the website freely and be able to visit the menu, book and reserve a table with a date/time of their choice. They will be able to also Sign up and login with an authenticated account that allows them to interact with their booking and write about their dietary requirements such as allergies etc.
+The user should be able to interact with the website freely and be able to visit the product pages of the site including, watches, glasses, watch straps etc. They will be able to also Sign up and login with an authenticated account that allows them to interact with their previous orders on their account etc.
 
 ### Admins
-The Admins should be able to manage the bookings of the User, being able to approve, delete requests that are received from the booking.
+The Admins should be able to manage the accounts of the users registered to the site, and freely able to use product management to alter and delete products at will.
 
 ### Agile Methodology
 
@@ -21,37 +21,36 @@ Agile Methodology was used via Github Projects Kanban board in order to create u
 | iD | Story | Resolution |
 | --- | --- | --- |
 | #1 | Account registration | Admin App |
-| #2 | Site Pagination | Web App |
-| #3 | View Menu | Menu Section |
-| #4 | Make A booking | Booking Section |
-| #5 | View Booking | Reservation App |
-| #6 | Cancel booking | Reservation App |
-| #7 | Send an email request for special booking/special requirements | Booking section |
-| #8 | Admin can manage user account | Admin App |
-| #9 | Admin can manage user booking | Admin App |
-| #10 | Admin can delete user account/booking | Admin App |
-
-![agile user stories](https://user-images.githubusercontent.com/65243328/176654146-d7dea048-805a-4891-9ca7-b1931a889363.JPG)
-![agile user stories complete](https://user-images.githubusercontent.com/65243328/176654148-106424df-7202-43ee-90a3-b2b340415ce4.JPG)
+| #2 | View a list of products | Web App |
+| #3 | View individual product details | products Section |
+| #4 | Able to identify different sectors of the site, Deals, clearance, offers etc. | Booking Section |
+| #5 | Register for an account | Web App |
+| #6 | Easy to login or logout | Web App |
+| #7 | Enabled to password reset if lost account details  | Web App |
+| #8 | Receive an email confirmation after registering  | Web App |
+| #9 | Able to view purchases any time | Checkout App |
+| #11 | Able to sort and search products  | Web App |
+| #12 | Sort a specific category or product  | Web App |
+| #13 | Search for a product by name or description  | Web App |
+| #14 | View order history  | Checkout App |
+| #15 | Remove or add items to cart/bag  | bag App |
+| #16 | Easily able to enter Payment information  | Web App |
+| #17 | Assured that payment information is safe and secure  | Web App |
+| #19 | Receive an email confirmation after checking out  | Web App |
+| #20 | Add a productt  | Admin App |
+| #21 | Edit/update a product | Admin App |
+| #22 | Delete a product  | Admin App |
 
 
 ### Purpose
-The Application is designed as a restaurant website which will be the first introduction to the user of what they can expect to find and enjoy their restaurant experience. The site provides an idea of the dishes available, the location of the restaurant and allows the user to be able to Manage their booking and reservation.
+The Application is designed as an eccomerce Watch and Jewelry store to attract users and purchase the products online via the store.
+They will be sent the uxury items to their address once purchased.
 
   
-### Wireframes
-
-Wireframes were designed in Figma with a rough concept in mind.
-Each page's wireframes include mobile(small screen) & desktop(large screens).
-
-![ghit wireframes 1](https://user-images.githubusercontent.com/65243328/173871566-ee33e486-a93f-4ad9-9f98-ea1f6fc27278.JPG)
-![ghit wireframes 2](https://user-images.githubusercontent.com/65243328/173871576-5a6b8f42-7d14-47c1-acc9-1a9921e25239.JPG)
-![ghit wireframes 3](https://user-images.githubusercontent.com/65243328/173871583-92e04afc-e638-46dc-b45e-b524f160f050.JPG)
-
 ### Colours
 
 
-![coolors ghit](https://user-images.githubusercontent.com/65243328/174058277-86a93d21-2654-4ed0-a6f1-d3cf6e754b8a.JPG)
+![coolors ghit]
 
 #000002 Rich Black used Gradient for the main bulk of the site. To give the clean aesthetic.
 
