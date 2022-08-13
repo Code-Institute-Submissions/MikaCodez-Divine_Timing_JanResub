@@ -3,7 +3,7 @@ Divine Timing is an Eccommerce store that specialises in handcraft digital watch
 
 
 
-[Deployed site here]()
+[Deployed site here](https://divinetiming.herokuapp.com/)
 
 
 ## UX
