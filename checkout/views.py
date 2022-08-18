@@ -6,6 +6,7 @@ from django.conf import settings
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
+from django.contrib.auth.decorators import login_required
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 from bag.contexts import bag_contents
@@ -29,7 +30,7 @@ def cache_checkout_data(request):
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
 
-
+@login_required
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
