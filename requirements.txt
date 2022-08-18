@@ -10,8 +10,8 @@ backports.zoneinfo==0.2.1
 bandit==1.7.4
 beautifulsoup4==4.11.1
 bleach==5.0.0
-boto3==1.24.42
-botocore==1.27.42
+boto3==1.24.54
+botocore==1.27.54
 certifi==2022.6.15
 cffi==1.15.0
 charset-normalizer==2.0.12
@@ -23,11 +23,11 @@ defusedxml==0.7.1
 dill==0.3.5.1
 distlib==0.3.4
 dj-database-url==1.0.0
-Django==3.2.14
+Django==3.2.15
 django-allauth==0.51.0
 django-countries==7.3.2
 django-crispy-forms==1.14.0
-django-storages==1.12.3
+django-storages==1.13.1
 docutils==0.18.1
 entrypoints==0.4
 executing==0.8.3
@@ -80,7 +80,6 @@ platformdirs==2.5.2
 prometheus-client==0.14.1
 prompt-toolkit==3.0.29
 psutil==5.9.1
-psycopg2==2.9.3
 psycopg2-binary==2.9.3
 ptyprocess==0.7.0
 pure-eval==0.2.2
@@ -97,7 +96,7 @@ pyrsistent==0.18.1
 python-dateutil==2.8.2
 python3-openid==3.2.0
 pytoolconfig==1.1.2
-pytz==2022.1
+pytz==2022.2.1
 PyYAML==6.0
 pyzmq==23.2.0
 readme-renderer==35.0
@@ -117,7 +116,7 @@ soupsieve==2.3.2.post1
 sqlparse==0.4.2
 stack-data==0.3.0
 stevedore==3.5.0
-stripe==3.5.0
+stripe==4.0.2
 terminado==0.15.0
 tinycss2==1.1.1
 toml==0.10.2
