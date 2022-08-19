@@ -1,4 +1,4 @@
-# Testing for Divine Timing Eccommerce Store
+# Testing for Divine Timing Ecommerce Store
 
 
 ## Validator Testing
@@ -41,7 +41,7 @@ This could not be helped as of the Bootstrap elements within the Code. Other tha
   
   
   models.py:
-There was one line error regarding the Line being too long however this couldnt be helped due to the Models code.
+There was one line error regarding the Line being too long however this couldn't be helped due to the Models code.
   I tried putting it through pyformatter however it was displaying an error in regards to this.
   
   ![modelspytest](https://user-images.githubusercontent.com/65243328/185669199-cc02794a-05d7-49fa-919e-3541991584cb.JPG)
@@ -57,7 +57,7 @@ There was one line error regarding the Line being too long however this couldnt 
 
 
 ## JavaScript Validation
-I have carried out JavaScript validation on all JavaScript files and JavaScript code within HTML files using JSHint. No errors came back just a warning.
+I have carried out JavaScript validation on all JavaScript files and JavaScript code within HTML files using JSHint. No errors came back, just a warning.
 
 ![jstest](https://user-images.githubusercontent.com/65243328/185670892-4b8f3abc-3f20-4c9a-84b6-d1e17f5b2859.JPG)
 
@@ -67,7 +67,7 @@ I have carried out JavaScript validation on all JavaScript files and JavaScript 
   ### Admin
 As a Site Admin I can approve or disapprove users of signing up to the website and creating their own profile.
 
-As a Site Admin I can create, read, update and delete Products via the Product managment page and the admin page, in order to add new products to the store.
+As a Site Admin I can create, read, update and delete Products via the Product management page and the admin page, in order to add new products to the store.
 ![prodmanage1](https://user-images.githubusercontent.com/65243328/185662439-d6ca84f5-3eb9-4ec8-8f5a-be100809bc5d.JPG)
 ![prodmanage2](https://user-images.githubusercontent.com/65243328/185662457-55e05015-5af3-42a3-a9a6-02f5bc55a8cd.JPG)
 
