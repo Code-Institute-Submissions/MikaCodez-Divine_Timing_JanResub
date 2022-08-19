@@ -47,7 +47,17 @@ Agile Methodology was used via Github Projects Kanban board in order to create u
 The Application is designed as an eccomerce Watch and Jewelry store to attract users and purchase the products online via the store.
 They will be sent the uxury items to their address once purchased.
 
-  
+### Wireframes
+
+Wireframes were designed in Balsamiq with a rough concept in mind.
+Each page's wireframes include mobile(small screen) & desktop(large screens).
+
+For Full Wireframes Document [Click Here](https://github.com/MikaCodez/Divine_Timing/blob/main/Divinetiming%20Wireframes.pdf)
+![homepageproductpage](https://user-images.githubusercontent.com/65243328/185651897-a49cd24d-c6f6-4cbd-bdfd-b0b81d48eea1.JPG)
+![homemobile](https://user-images.githubusercontent.com/65243328/185651927-d3b44df9-3881-4608-8b0b-9129f07b74cc.JPG)
+
+For Full Wireframes Document [Click Here](https://github.com/MikaCodez/Divine_Timing/blob/main/Divinetiming%20Wireframes.pdf)
+ 
 ### Colours
 
 
@@ -127,7 +137,7 @@ I have also included a facebook page which links to the site. Users can take par
 
 
 ## Testing
-[Link to TESTING.MD here:](https://github.com/MikaCodez/GHITrestaurant/blob/main/Testing.md)
+[Link to TESTING.MD here:](https://github.com/MikaCodez/Divine_Timing/blob/main/Testing.md)
 
 
 ## Deployment
