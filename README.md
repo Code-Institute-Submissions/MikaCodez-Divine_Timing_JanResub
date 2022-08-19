@@ -1,5 +1,5 @@
 # Divine Timing
-Divine Timing is an Eccommerce store that specialises in handcraft digital watches and traditional watches.
+Divine Timing is an Eccommerce store that specialises in handcrafted digital watches and traditional watches.
 
 ![responsive page](https://user-images.githubusercontent.com/65243328/184502312-b607df79-aee3-44f3-b988-e257eb320d37.JPG)
 
@@ -8,7 +8,7 @@ Divine Timing is an Eccommerce store that specialises in handcraft digital watch
 
 ## UX
 ### Users
-The user should be able to interact with the website freely and be able to visit the product pages of the site including, watches, glasses, watch straps etc. They will be able to also Sign up and login with an authenticated account that allows them to interact with their previous orders on their account etc.
+The user should be able to interact with the website freely and be able to visit the product pages of the site including watches, glasses, watch straps etc. They will be able to also Sign up and login with an authenticated account that allows them to interact with their previous orders on their account etc.
 
 ### Admins
 The Admins should be able to manage the accounts of the users registered to the site, and freely able to use product management to alter and delete products at will.
@@ -37,15 +37,15 @@ Agile Methodology was used via Github Projects Kanban board in order to create u
 | #16 | Easily able to enter Payment information  | Web App |
 | #17 | Assured that payment information is safe and secure  | Web App |
 | #19 | Receive an email confirmation after checking out  | Web App |
-| #20 | Add a productt  | Admin App |
+| #20 | Add a product  | Admin App |
 | #21 | Edit/update a product | Admin App |
 | #22 | Delete a product  | Admin App |
 
 ![Kanban Board](https://user-images.githubusercontent.com/65243328/184502572-72f29e53-1d57-442c-a0d9-1308e92fc290.JPG)
 
 ### Purpose
-The Application is designed as an eccomerce Watch and Jewelry store to attract users and purchase the products online via the store.
-They will be sent the uxury items to their address once purchased.
+The Application is designed as an ecommerce Watch and Jewellery store to attract users and purchase the products online via the store.
+They will be sent the luxury items to their address once purchased.
 
 ### Wireframes
 
@@ -80,7 +80,7 @@ For Full Wireframes Document [Click Here](https://github.com/MikaCodez/Divine_Ti
 ## Features
 Home Page
 
-The home page has an attractive layout that is bright and iniviting. It also hosts a review section of previous customers and additional information on the features of the digital watches. The page has a Navigation bar that links to other sections of the site and buttons on the page that link straight to the profile and orders of the customer. If the user is not a registered user and not logged in. The navbar has a login/register option and the button to take the user to the login page.
+The home page has an attractive layout that is bright and inviting. It also hosts a review section of previous customers and additional information on the features of the digital watches. The page has a Navigation bar that links to other sections of the site and buttons on the page that link straight to the profile and orders of the customer. If the user is not a registered user and not logged in. The navbar has a login/register option and the button to take the user to the login page.
 
 ![divin1](https://user-images.githubusercontent.com/65243328/184503091-c1ba9f57-1e34-4c04-9f55-e1473179f33b.JPG)
 ![divin2](https://user-images.githubusercontent.com/65243328/184503098-ed260371-6b5a-4d6b-95a4-51714281714c.JPG)
@@ -88,7 +88,7 @@ The home page has an attractive layout that is bright and iniviting. It also hos
 
 product Page
 
-the product Page is a simple page that is not distracting for the user and catches their eye right away with a list of various products users can buy.
+The product Page is a simple page that is not distracting for the user and catches their eye right away with a list of various products users can buy.
 Ranging from watches, to glasses and watch straps.
 
 ![products1](https://user-images.githubusercontent.com/65243328/184503147-b549f2e3-d8e7-42bb-8cb7-91a0902a154d.JPG)
@@ -98,7 +98,7 @@ Ranging from watches, to glasses and watch straps.
 
 Profile Page
 
-The Profile page will contain the details of user that is logged in and a list of all their previous purchases and order history.
+The Profile page will contain the details of the user that is logged in and a list of all their previous purchases and order history.
 
 ![prof1](https://user-images.githubusercontent.com/65243328/184503298-9f10dcbc-8357-4ae9-acd4-962558c1966c.JPG)
 
@@ -121,10 +121,10 @@ Allowing Admins to add/edit/delete products as they see fit.
 
 
 ## SEO and Web marketing
-various SEO techniques where put in place to help make the searches of the site much better with implementation of meta tags throughout the pages. 
-Adding a sitemap.xml and robots.txt file aswell to be submitted to google for better quality search engine optimisation.
+various SEO techniques were put in place to help make the searches of the site much better with implementation of meta tags throughout the pages. 
+Adding a sitemap.xml and robots.txt file as well to be submitted to google for better quality search engine optimisation.
 
-I have also included a facebook page which links to the site. Users can take part in the social aspect of the site and stay updated on the page, aswell as the facebook page linking directly to the site for users to be able to purchase.
+I have also included a facebook page which links to the site. Users can take part in the social aspect of the site and stay updated on the page, as well as the facebook page linking directly to the site for users to be able to purchase.
 
 [Facebook page here](https://www.facebook.com/Divine-Timing-101174169382750)
 
@@ -230,12 +230,10 @@ Youtube - Also Heavy Reliance on youtube tutorials from Codemy.com and Pretty Pr
 
 ## Credits
 
-SCOPE code credits to Code Institute, Boutique Ado Walkthrough Project. HTML template credit to Nikhil. I have amended the code to my Eccomerce sites specification.
+SCOPE code credits to Code Institute, Boutique Ado Walkthrough Project. HTML template credit to Nikhil. I have amended the code to my Ecommerce sites specification.
 
 Credits also due to Code Institute staff for helping especially Tutor Support.
 
 Images for Reviews taken from [Unsplash.](https://unsplash.com/)
 
 Images taken for products from various watch stores: [Rolex](https://www.rolex.com/en-us), [Jomashop](https://www.jomashop.com/), [sunglasseshut](http://sunglasseshut.com/), [strapsco](https://strapsco.com/), [monkey glasses](https://www.monkeyglasses.com/)
-
-
