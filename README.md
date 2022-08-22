@@ -43,6 +43,8 @@ Agile Methodology was used via Github Projects Kanban board in order to create u
 
 ![Kanban Board](https://user-images.githubusercontent.com/65243328/184502572-72f29e53-1d57-442c-a0d9-1308e92fc290.JPG)
 
+[For A view of Issues please click here](https://github.com/MikaCodez/Divine_Timing/issues?q=is%3Aissue+is%3Aclosed)
+
 ### Purpose
 The Application is designed as an ecommerce Watch and Jewellery store to attract users and purchase the products online via the store.
 They will be sent the luxury items to their address once purchased.
