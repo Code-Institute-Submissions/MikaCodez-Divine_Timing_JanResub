@@ -24,6 +24,17 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 
+class ProductCommentAdmin(admin.ModelAdmin):
+    """ Allow admin users to manage user comments """
+    list_display = (
+        'product',
+        'product_comment',
+        'author',
+        'date_added',
+    )
+    ordering = ['-date_added']
+
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(ProductComment)

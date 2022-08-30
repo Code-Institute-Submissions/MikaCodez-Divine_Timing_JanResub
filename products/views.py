@@ -4,8 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, ProductComment
+from .forms import ProductForm, ProductCommentForm
 
 # Create your views here.
 
@@ -143,3 +143,18 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, "Product deleted!")
     return redirect(reverse("products"))
+
+
+@login_required
+def product_comment(request):
+    """ Add a comment to individual product """
+    if not request.user.is_superuser:
+        messages.error(request, "Sorry, only store owners can do that.")
+        return redirect(reverse("home"))
+    
+    template = "products/product_comment.html"
+    context = {
+        "form": ProductCommentForm,
+    }
+
+    return render(request, template, context)
