@@ -10,14 +10,13 @@
 {% endblock %}
 
 {% block content %}
-<br><br><br>
 <div class="container">
     <div class="row">
         <div class="col-12">
             <h2 class="text-center">Product Comments</h2>
         </div>
         <div class="col-12 mt-3">
-            <h3 class="text-center">Add a Comment</h3>
+            <h3 class="text-center">Update a Comment</h3>
         </div>
     </div>
     <div class="row mt-3 custom-margin">
@@ -27,8 +26,8 @@
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div class="text-center">
-                    <button class="btn btn-blue" type="submit" >Comment</button>
-                    <a href="{% url 'products' %}" class="btn btn-grey" aria-label="Link to cancel add comment form">
+                    <button class="btn btn-blue" type="submit" >Update Comment</button>
+                    <a href="{% url 'product_comment' %}" class="btn btn-grey" aria-label="Link to cancel add comment form">
                         Cancel
                     </a>
                 </div>

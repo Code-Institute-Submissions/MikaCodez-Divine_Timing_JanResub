@@ -64,6 +64,44 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    comments = ProductComment.objects.all()
+    print("comments",comments)
+    # previous_comment = None
+    # # Check if user has left a Product comment previously
+    # if request.user.is_authenticated:
+    #     previous_comment = ProductComment.objects.filter(
+    #         author=request.user, comments=comments,
+    #     ).exists()
+    # # Posts comment form info
+    # if request.method == 'POST':
+    #     comment_form = ProductCommentForm(request.POST)
+    #     # Filters previous comments from session user
+    #     previous_comment = ProductComment.objects.filter(
+    #         author=request.user, comments=comments,
+    #     ).exists()
+    #     if previous_comment:
+    #         # If user has left previous comment
+    #         # error message displayed
+    #         messages.error(request,
+    #                        f'You have already left a comment'
+    #                        f'for {product_comment.product_detail}')
+    #     else:
+    #         # If no previous comment 
+    #         # and form is valid, comment saved
+    #         if comment_form.is_valid():
+    #             comment = comment_form.save(commit=False)
+    #             comment.products = product_detail
+    #             comment.author = request.user
+    #             comment.save()
+    #             messages.success(request, 'Comment successfully added!')
+    #             return redirect(reverse('product_detail', args=[comment.id]))
+    #         else:
+    #             messages.error(request,
+    #                            'Something went wrong.'
+    #                            'Please ensure your form is valid')
+    #             return redirect(reverse('product_detail', args=[comment.id]))
+    # else:
+    #     comment_form = ProductCommentForm()
 
     context = {
         "product": product,
@@ -153,6 +191,21 @@ def product_comment(request):
         return redirect(reverse("home"))
     
     template = "products/product_comment.html"
+    context = {
+        "form": ProductCommentForm,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def edit_product_comment(request):
+    """ edit a comment to individual product left by user"""
+    if not request.user.is_superuser:
+        messages.error(request, "Sorry, only store owners can do that.")
+        return redirect(reverse("home"))
+    
+    template = "products/edit_product_comment.html"
     context = {
         "form": ProductCommentForm,
     }

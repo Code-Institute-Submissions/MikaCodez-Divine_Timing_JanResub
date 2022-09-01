@@ -117,6 +117,54 @@
                                 <button class="btn btn-black rounded-0" type="submit">Add Comment</button>    
                             </div>
                             {% for products in product.productcomment_set.all %}
+                            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                                <h3>Comments</h3>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                          <tr class="d-none d-md-table-row">
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Username</th>
+                                            <th scope="col">Comment</th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                          </tr>
+                                          <tr class="d-md-none">
+                                            <th scope="col">Comment</th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for comments in comments %}
+                                            <tr>
+                                                <th scope="row" class="d-none d-md-table-cell">{{ comment.date_added }}</th>
+                                                <td class="d-none d-md-table-cell">{{ comment.author }}</td>
+                                                <td>{{ comment.product_comment }}</td>
+                                                <td class="icons">
+                                                    <!-- Allow user to edit own comment -->
+                                                    {% if request.user == comment.author %}
+                                                    <a href="{% url 'edit_product_comment' comment.id %}" aria-label="Link to edit user comment">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </a>
+                                                    {% endif %}
+                                                </td>
+                                                <td class="icons">
+                                                    <!-- Allow superuser or user who left comment to delete-->
+                                                    {% if request.user == comment.author or request.user.is_superuser %}
+                                                    <a href="#deleteComment" data-bs-toggle="modal" data-bs-target="#deleteComment"
+                                                        data-id="{{ comment.id }}" data-url="{% url 'edit_product_comment' comment.id %}"
+                                                        aria-label="Link to deletion confirmation modal">
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </a>
+                                                    {% endif %}
+                                                </td>
+                                                </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
                             {% endfor %}
                         </form>
                         {% endif %}
