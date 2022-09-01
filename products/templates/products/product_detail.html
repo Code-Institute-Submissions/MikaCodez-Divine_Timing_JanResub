@@ -116,6 +116,8 @@
                                 <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
                                 <button class="btn btn-black rounded-0" type="submit">Add Comment</button>    
                             </div>
+                            {% for products in product.productcomment_set.all %}
+                            {% endfor %}
                         </form>
                         {% endif %}
                     </div>

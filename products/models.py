@@ -45,4 +45,4 @@ class ProductComment(models.Model):
     )
 
     def __str__(self):
-        return '%s - %s' % (self.product.name)
+        return(self.product.name)
