@@ -116,7 +116,7 @@
                                 <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
                                 <button class="btn btn-black rounded-0" type="submit">Add Comment</button>    
                             </div>
-                            {% for products in product.productcomment_set.all %}
+                            {% for comment in comments %}
                             <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                                 <h3>Comments</h3>
                                 <div class="table-responsive">
@@ -138,7 +138,7 @@
                                           </tr>
                                         </thead>
                                         <tbody>
-                                            {% for comments in comments %}
+                                            {% comment %}
                                             <tr>
                                                 <th scope="row" class="d-none d-md-table-cell">{{ comment.date_added }}</th>
                                                 <td class="d-none d-md-table-cell">{{ comment.author }}</td>
@@ -162,7 +162,7 @@
                                                     {% endif %}
                                                 </td>
                                                 </tr>
-                                            {% endfor %}
+                                            {% endcomment %}
                                         </tbody>
                                     </table>
                             {% endfor %}
