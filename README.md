@@ -29,6 +29,7 @@ Agile Methodology was used via Github Projects Kanban board in order to create u
 | #7 | Enabled to password reset if lost account details  | Web App |
 | #8 | Receive an email confirmation after registering  | Web App |
 | #9 | Able to view purchases any time | Checkout App |
+| #10 | Able to post comments on individual products | Web App |
 | #11 | Able to sort and search products  | Web App |
 | #12 | Sort a specific category or product  | Web App |
 | #13 | Search for a product by name or description  | Web App |
@@ -44,6 +45,16 @@ Agile Methodology was used via Github Projects Kanban board in order to create u
 ![Kanban Board](https://user-images.githubusercontent.com/65243328/184502572-72f29e53-1d57-442c-a0d9-1308e92fc290.JPG)
 
 [For A view of Issues please click here](https://github.com/MikaCodez/Divine_Timing/issues?q=is%3Aissue+is%3Aclosed)
+
+## Database
+This database scheme was created with [DBDiagram](https://dbdiagram.io/home) The Diagram shows the flow and relationship between different models.
+![divineecomedbdiagram](https://user-images.githubusercontent.com/65243328/188864845-2174b2c1-fc86-45dd-9ac4-4b4ce0d46d3b.png)
+
+
+## FlowChart
+This is a flowchart to also display the B2C relationship flow to customers. This was generated in Figma.
+
+![flowchart](https://user-images.githubusercontent.com/65243328/188864787-b944f4be-638c-489f-a7d3-5fd456861b95.JPG)
 
 ### Purpose
 The Application is designed as an ecommerce Watch and Jewellery store to attract users and purchase the products online via the store.
@@ -88,7 +99,7 @@ The home page has an attractive layout that is bright and inviting. It also host
 ![divin2](https://user-images.githubusercontent.com/65243328/184503098-ed260371-6b5a-4d6b-95a4-51714281714c.JPG)
 
 
-product Page
+Product Page
 
 The product Page is a simple page that is not distracting for the user and catches their eye right away with a list of various products users can buy.
 Ranging from watches, to glasses and watch straps.
@@ -96,6 +107,10 @@ Ranging from watches, to glasses and watch straps.
 ![products1](https://user-images.githubusercontent.com/65243328/184503147-b549f2e3-d8e7-42bb-8cb7-91a0902a154d.JPG)
 ![products2](https://user-images.githubusercontent.com/65243328/184503156-ebb231a2-5a85-472c-b650-c50c7b560018.JPG)
 
+Products comment page
+
+The Product comment page is an additional page to the individual products page that allows users to comment and leave reviews on products previously bought.
+![addcomment](https://user-images.githubusercontent.com/65243328/188865399-d75b9645-e16e-41b6-b19c-c4bc432fd6a4.JPG)
 
 
 Profile Page
