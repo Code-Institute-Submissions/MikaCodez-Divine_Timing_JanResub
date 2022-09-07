@@ -213,36 +213,64 @@ Making a local clone Locate the GitHub repository. Link can be found here. Next 
 
 ## Technologies Used
 Python All packages used can be found in the [requirements.txt](https://github.com/MikaCodez/Divine_Timing/blob/main/requirements.txt) File.
+
 HTML - Used for the template structures.
+
 CSS - Used to style the markup.
+
 Javascript - Custom use minimal, to set a timeout on bootstrap messages.
+
 GitHub - to store the overall project repository.
+
 GitPod - used as a workspace to do the coding.
+
 Django - django frameworks to manage apps.
+
 Figma - To design the wireframe of the complete project.
+
 Google Fonts - to brandize 'Harmonic Poems' with google fonts. Used for logo and all the written content.
+
 Fontawesome - fontawesome icons for social media links and as additional design.
+
 Bootstrap - grid, layout, columns, cards and forms structure.
+
 Heroku - for the deployment of the project.
+
 Coolors - to choose the colour palette and colour shades.
+
 PostgreSQL - database storage of the models.
+
 AWS - image and static files storage.
+
 AmIResponsive - responsiveness of the site.
+
 Lighthouse - used for testing site functionality.
+
 PEP8 - used for Python files testing.
+
 W3C Markup Validation Service - used for HTML testing.
+
 W3C CSS Validation Service - used for CSS testing
 
 ## Resources
+
 Code Institute's Slack Community.
+
 Code Institute's Codestar Django Blog was used in the beginning stages of the development of this project.
+
 Code Institute's Boutique Ado app was used as a base for the products and navigation
+
 Django Documentation - Heavy Reliance on Django documentation to implement forms, models, views etc.
+
 W3Schools documentation for CSS
+
 Bootstrap Documentation - For implementing Bootstrap styles across project
+
 Google
+
 Stack overflow
-Youtube - Also Heavy Reliance on youtube tutorials from Codemy.com and Pretty Printed especially when it came to views and models in py
+
+Youtube - Also Heavy Reliance on youtube tutorials from Codemy.com especially when it came to views and models in py
 
 
 ## Credits
