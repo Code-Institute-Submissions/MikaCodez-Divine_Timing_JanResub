@@ -211,6 +211,8 @@ if 'USE_AWS' in os.environ:
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-mikacodez-divinetiming-jmog611rw6u.ws-eu64.gitpod.io']
+
 # Stripe
 FREE_DELIVERY_THRESHOLD = 250
 STANDARD_DELIVERY_PERCENTAGE = 10

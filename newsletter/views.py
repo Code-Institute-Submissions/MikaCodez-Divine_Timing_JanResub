@@ -1,8 +1,6 @@
 """
 views for newsletter
 """
-# pylint: disable=no-member
-# pylint: disable=invalid-name
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
