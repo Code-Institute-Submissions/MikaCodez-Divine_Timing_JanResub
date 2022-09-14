@@ -117,5 +117,13 @@ As a Site Admin I can create, read, update and delete Products via the Product m
 
 ![divin3](https://user-images.githubusercontent.com/65243328/185660336-50329ece-c848-424b-82a3-1ac26c363dc7.JPG)
 
-  
+
+
+## Current Bugs and Issues
+Only issues seem to be facing at the moment is the rendering of comments on individual product pages.
+Hopefully will have this operating normally when 2nd edition of site is launched.
+
+  ![addcomment 2](https://user-images.githubusercontent.com/65243328/190250225-65c27c17-763d-4346-bffe-159e3118fa09.JPG)
+
+
 [Back to Readme](https://github.com/MikaCodez/Divine_Timing/blob/main/README.md)
