@@ -151,10 +151,7 @@ def delete_product(request, product_id):
 @login_required
 def product_comment(request):
     """ Add a comment to individual product """
-    if not request.user.is_superuser:
-        messages.error(request, "Sorry, only store owners can do that.")
-        return redirect(reverse("home"))
-    
+  
     template = "products/product_comment.html"
     context = {
         "form": ProductCommentForm,
