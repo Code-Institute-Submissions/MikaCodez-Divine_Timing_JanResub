@@ -137,6 +137,13 @@ Allowing Admins to add/edit/delete products as they see fit.
 ![prodmanage2](https://user-images.githubusercontent.com/65243328/184503543-0320b9ed-02fb-4349-8341-d7ed8090c69b.JPG)
 
 
+## Future Features
+Future Features left to implement are a confirmation email sent back to users once they are subscibed to the newsletter and to
+receive monthly newsletters from the Divine Timing team regarding products, promotions and news.
+
+![newslet](https://user-images.githubusercontent.com/65243328/190248755-79b2fd43-c5fa-411b-bd6b-3730ad5f9351.JPG)
+
+
 ## SEO and Web marketing
 various SEO techniques were put in place to help make the searches of the site much better with implementation of meta tags throughout the pages. 
 Adding a sitemap.xml and robots.txt file as well to be submitted to google for better quality search engine optimisation.
