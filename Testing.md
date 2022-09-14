@@ -19,11 +19,21 @@ my extensions were interfering with the testing giving the site low scoring.
 
 ### W3C MARKUP TOOLS
 
-No major visible Errors where shown for Nu HTML validator, mainly just errors and warnings for spaces and duplicate <img> tags and <tabs>
-This could not be helped as of the Bootstrap elements within the Code. Other than this no major issues found while testing.
- 
-  
-![nuhtmlvalid](https://user-images.githubusercontent.com/65243328/185665532-171f2570-8979-4bab-832e-b02888ae0f91.JPG)
+No major visible Errors where shown for Nu HTML validator, mainly just some warnings for javascript tag uses.
+Home page:
+![nuhtmlvalidator 1](https://user-images.githubusercontent.com/65243328/190242666-5ef79993-2875-4229-9f32-a94fce49bba3.JPG)
+
+Products:
+
+![nuhtmlvalidator 2](https://user-images.githubusercontent.com/65243328/190242672-9bbc523e-68cc-4830-9adb-667567f7ee97.JPG)
+
+Profile:
+
+![nuhtmlvalidator 3](https://user-images.githubusercontent.com/65243328/190242673-01e06ae9-17f6-4fcd-a3dd-7d0f0ec67cc1.JPG)
+
+Bag:
+![nuhtmlvalidator 4](https://user-images.githubusercontent.com/65243328/190242679-a73d75bd-b0bc-4f29-8d68-08a9e5513665.JPG)
+
 
 
 ## Python Validator PEP8
