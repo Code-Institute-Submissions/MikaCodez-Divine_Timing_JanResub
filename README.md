@@ -165,57 +165,196 @@ I have also included a facebook page which links to the site. Users can take par
 
 
 ## Deployment
-The site was deployed to Heroku. The below steps were carried out to deploy.
+The site was deployed to Heroku. 
+The below steps were carried out to deploy.
 
-Deployment steps add the list of requirements by writing in the terminal "pip3 freeze > requirements.txt"
+The Following Accounts will also be needed in order to continue:
 
-Git add and git commit the changes made
+An email account of your choice. I used gmail
 
-Log into Heroku or create a new account and log in
+[Stripe for payments](https://stripe.com/)
 
-top right-hand corner click "New" and choose the option Create new app, if you are a new user, the "Create new app" button will appear in the middle of the screen
+[AWS for the S3 bucket](https://aws.amazon.com/)
 
-Write app name - it has to be unique, it cannot be the same as this app
 
-Choose Region - Europe selected in this instance
+### Creating AWS for S3
 
-Click "Create App"
+Go to Amzon Web Services page and login or register
 
-The page of your project opens. 8. Choose "settings" from the menu on the top of page 9. Go to section "Config Vars" and click button "Reveal Config Vars"
+•You should be redirected to AWS Managment Console, if not click onto AWS logo in top left corner or click Services icon and choose Console Home
 
-Go to git pod and copy the content of "creds.json" file
+•Below the header AWS Services click into All Services and find S3 under Storage
 
-In the field for "KEY" enter "CREDS" - all capital letters
+•Create New Bucket using Create Bucket button in top right hand corner
 
-Paste the content of "creds.json" and paste to field "VALUE" Click button "Add"
+•Configuration: type in your chosen name for the bucket (preferably matching your heroku app name) and AWS Region closest to you
 
-Add another key "PORT" and value "8000"
+Object ownership: ACLs enabled, Bucket owner preffered
 
-Go to section "Build packs" and click "Add build pack"
+•Block Public Access settings: Uncheck to allow public access, Acknowledge that the current settings will result that the objects within the bucket will become public
 
-in this new window - click Python and "Save changes" click "Add build pack" again in this new window - click Node.js and "Save changes" take care to have those apps in this order: Python first, Node.js second, drag and drop if needed Next go to "Deploy" in the menu bar on the top
+•Click Create Bucket
 
-Go to section "deployment method", choose "GitHub"
+You are redirected to Amazon S3 with list of your buckets. Click into the name of the bucket you just created
 
-New section will appear "Connect to GitHub" - Search for the repository to connect to
+•Find the tab Properties on the top of the page: Static website hosting at the bottom of the properties page: clik to edit, click enable, fill in index document: index.html and error.html for error
 
-type the name of your repository and click "search"
+On the Permissions tab:
 
-once Heroku finds your repository - click "connect"
+Cross-origin resource sharing (CORS) Paste in the below code as configuration and save.
 
-Scroll down to the section "Automatic Deploys"
 
-Click "Enable automatic deploys" or choose "Deploy branch" and manually deploy
+![s3aws](https://user-images.githubusercontent.com/65243328/190393189-4f960d87-fe8a-4193-b562-b105e1d940e1.JPG)
 
-Click "Deploy branch"
+Bucket Policy within permissions tab: Edit bucket policy Click AWS Policy Generator (top right conrner)
 
-Once the program runs: you should see the message "the app was successfully deployed" 23. Click the button "View"
+Select type of policy: S3 Bucket policy Principal: * (allows all) Actions: Get object Amazon Resource Name (ARN): paste from the Edit bucket policy page in permissions Click Add statement Than Click Generate Policy and Copy the policy into bucket policy editor. In the policy code find "Resource" key and add "/*" after the name of the bucket to enable all Save changes
 
-Forking the GitHub repository By forking out of this repository you will be able to view and edit the code without affecting the original repository.
+•Access control list (ACL) within permissions tab: click Edit
+find Everyone (public access) and check List box and save
 
-Locate the GitHub repository. Link can be found here: GHIT Restaurant Click the button in the top right-hand corner "Fork" This will take you to your own repository to a fork that is called the same as the original branch.
+•Identity and Access Management (IAM) Go back to the AWS Management Console and find IAM in AWS Services
+side menu - User Groups and click Create Group name group "manage-your-app-name" and click Create group
 
-Making a local clone Locate the GitHub repository. Link can be found here. Next to the green Gitpod button you will see a button "code" with an arrow pointing down You are given the option to open with GitHub desktop or download zip You can also copy https full link, go to git bash and write git clone and paste the full link
+side menu - Policies and click Create Policy Click import managed policy - find AmazonS3FullAccess Copy ARN again and paste into "Resource" add list containint two elements "[ "arn::..", ""arn::../*]" First element is for bucket itself, second element is for all files and foldrs in the bucket
+
+Click bottom right Add Tags, than Click bottom right Next: Review Add name of the policy and description
+
+Click bottom right Create policy
+
+•Attach policy to the group we created:
+•go to User Groups on side menu
+•select your group from the list
+go to permissions tab and add permissions drop down and choose Attach policies
+•find the policy created above and click button in bottom right Add permissions
+•Create User to go in the group
+•Users in the side menu and click add users
+
+User name: your-app-staticfiles-user Check option: Access key - Programmatic access Click button at the bottom right for Next
+
+Add user group and add user to the group you created earlier Click Next Tags and Next: review and Create user
+•Download .csv file
+•Connect django to AWS S3 bucket
+•install boto3
+•install django-storages
+•freeze to requirements.txt
+•add storages to installed apps in settings.py
+
+![awsbucket](https://user-images.githubusercontent.com/65243328/190394148-ae4fd034-9fbe-48a7-9110-c1c00af706ba.JPG)
+
+•Go to heroku to set up enviromental variables
+open CSV file downloaded earlier and copy each variable into heroku Settings
+
+AWS_STORAGE_BUCKET_NAME AWS_ACCESS_KEY_ID from csv AWS_SECRET_ACCESS_KEY from csv USE_AWS = True remove DISABLE_COLLECTSTATIC variable from heroku
+
+•Create file in root directory custom_storages.py
+
+![awsbucket2](https://user-images.githubusercontent.com/65243328/190394576-ac231e2b-37dd-47ad-9ac8-1dc983db6311.JPG)
+
+•Go to settings.py, add the following AWS settings
+
+![image](https://user-images.githubusercontent.com/65243328/190394672-b3090d4e-0f98-4ff8-91d9-be8d6d4b5b78.png)
+
+To upload the media files to S3 bucket
+•Go to your S3 bucket page on AWS. Create new folder "media"
+•go to the media folder and click Upload
+
+![image](https://user-images.githubusercontent.com/65243328/190395189-3ad1fe90-ebce-45b2-8040-2748c8c6e23e.png)
+
+
+### Steps to Deployment
+
+You can clone this repository directly into you editor by pasting the following command into the terminal: https://github.com/MikaCodez/Divine_Timing
+Or you can save a copy of this directory by clicking the green button " Clone or download" then "Download Zip" and after that extract the Zip file to your folder, change the directory to the directory file location you just created.
+For this project I stored all Stripe secret key in both Heroku setting and Gitpod setting. That way i could still use them for development and production.
+In settings.py you can set your variables like in the example below
+
+import os
+
+SECRET_KEY = os.environ.get(your secret key)
+DEBUG = 'DEVELOPMENT' in os.environ
+STRIPE_PUBLIC_KEY = os.getenv(your secret key
+STRIPE_SECRET_KEY = os.getenv(your secret key)
+STRIPE_WH_SECRET = os.getenv(your secret key)
+For more info on how to set up the Stripe keys visit Stripe key.
+
+•Install all requirements from the requirements.txt file putting this command into your terminal:
+pip3 install -r requirements.txt
+
+•In the terminal in your IDE migrate the models to crete a database using the following commands:
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+•Load the data fixture (Categories, Specials, Products) in that order using the following command in the terminal
+python3 manage.py loaddata <fixture name>
+  
+•Create a superuser, it will alow you to have access to the admin panel. you need a username, an email, a password. Note the password won't display in the terminal but will be registered.
+ 
+python3 manage.py createsuperuser
+  
+•You can now run the the application using the following command in the terminal:
+python3 manage.py runserver
+  
+•To access the admin panel add /admin in the url and enter the details for the superuser you created.
+  
+Heroku Deployment
+
+In order for Heroku to work properly, the local deployment steps are required. You will also need to have installed gunicorn, dj-database-url and psycopg. All of those are already in the project requirements.txt, but for future project they are essentials for Heroku to function properly.
+
+•Create a requirements.txt file, which will contains the list of dependencies, using the following command in the terminal:
+pip3 freeze > requirements.txt
+  
+•Create a Procfile and inside it type: 
+web: gunicorn divine_timing.wsgi:application
+  
+On Heroku website you can now create your new app, assign a unique name(try to use a name as close as possible to the project name for consistency), choose the region the closest to you and click Create app.(In my case it was Europe)
+
+![heroku11](https://user-images.githubusercontent.com/65243328/190389567-ebce4882-a574-4f9b-a992-0ec18705c5d7.JPG)
+
+  
+Go to Resources tab in Heroku, then in the Add-ons search bar look for Heroku Postgres, select Hobby Dev — Free and click Provision* button to add it to your project. (This is where dj-database-url and Psycopg are required.)
+
+![image](https://user-images.githubusercontent.com/65243328/190396481-3b566dd9-e87a-45a7-9301-286b37750b3c.png)  
+  
+In the Heroku settings click on Reveal Config Vars and set the following variables.
+  
+![config-vars](https://user-images.githubusercontent.com/65243328/190388957-e82e160c-3632-4f20-80db-445f33fff214.png)
+  
+![image](https://user-images.githubusercontent.com/65243328/190397249-ce5fd201-c52d-4bc7-91d1-9fbef0003e74.png)
+
+
+Copy DATABASE_URL's value(Postrgres database URL) from the Config Vars and temporary paste it into the default database in settings.py. 
+You can temporary comment out the current database settings code and just paste the following in settings.py:
+  
+
+![djdatabase](https://user-images.githubusercontent.com/65243328/190389874-781386d1-87e6-4537-9ac5-4f7ae5225ca4.png)
+
+Also make sure to remember your Stripe keys are set in settings.py
+ 
+![image](https://user-images.githubusercontent.com/65243328/190395575-436cbeac-d1d7-445e-b046-f2d440191ad3.png)
+
+
+  
+This is just a temporary set up that allows to make all the migrations required for our data in our DB to be transfer to Heroku POstgres. You shouldn't commit and push at this stage for security reason.
+
+Here you can now follow the exact steps, 4, 5 and 6 as explain in local deployment.
+
+You can remove the POstgres URL form you settings and uncomment the default DATABASE code form your settings.
+
+Add your heroku app url to ALLOWED_HOST in the settings file and also include local host.
+
+ALLOWED_HOSTS = ['your heroku app name here', 'localhost']
+You can now connect Heroku to Github to automatically deploy each time you push to Github. In Heroku Dashboards select
+Deploy -> Deployment method -> Github
+link your Github repo name to Heroku
+Click Enable automatic Deployment
+
+![herokugit](https://user-images.githubusercontent.com/65243328/190390292-1f8217cb-f025-4892-b588-58fbb5498bbd.JPG)
+
+
+Now you you run git push in the terminal, it will push to Github and Heroku.
+After your app has been successfully deployed you can view you project by clicking on open app
+
 
 
 ## Technologies Used
