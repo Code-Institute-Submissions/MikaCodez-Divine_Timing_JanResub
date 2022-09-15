@@ -179,9 +179,9 @@ An email account of your choice. I used gmail
 
 ### Creating AWS for S3
 
-Go to Amzon Web Services page and login or register
+Go to Amazon Web Services page and login or register
 
-•You should be redirected to AWS Managment Console, if not click onto AWS logo in top left corner or click Services icon and choose Console Home
+•You should be redirected to AWS Management Console, if not click onto AWS logo in top left corner or click Services icon and choose Console Home
 
 •Below the header AWS Services click into All Services and find S3 under Storage
 
@@ -189,15 +189,15 @@ Go to Amzon Web Services page and login or register
 
 •Configuration: type in your chosen name for the bucket (preferably matching your heroku app name) and AWS Region closest to you
 
-Object ownership: ACLs enabled, Bucket owner preffered
+Object ownership: ACLs enabled, Bucket owner preferred
 
 •Block Public Access settings: Uncheck to allow public access, Acknowledge that the current settings will result that the objects within the bucket will become public
 
 •Click Create Bucket
 
-You are redirected to Amazon S3 with list of your buckets. Click into the name of the bucket you just created
+You are redirected to Amazon S3 with a list of your buckets. Click into the name of the bucket you just created
 
-•Find the tab Properties on the top of the page: Static website hosting at the bottom of the properties page: clik to edit, click enable, fill in index document: index.html and error.html for error
+•Find the tab Properties on the top of the page: Static website hosting at the bottom of the properties page: click to edit, click enable, fill in index document: index.html and error.html for error
 
 On the Permissions tab:
 
@@ -206,9 +206,9 @@ Cross-origin resource sharing (CORS) Paste in the below code as configuration an
 
 ![s3aws](https://user-images.githubusercontent.com/65243328/190393189-4f960d87-fe8a-4193-b562-b105e1d940e1.JPG)
 
-Bucket Policy within permissions tab: Edit bucket policy Click AWS Policy Generator (top right conrner)
+Bucket Policy within permissions tab: Edit bucket policy Click AWS Policy Generator (top right corner)
 
-Select type of policy: S3 Bucket policy Principal: * (allows all) Actions: Get object Amazon Resource Name (ARN): paste from the Edit bucket policy page in permissions Click Add statement Than Click Generate Policy and Copy the policy into bucket policy editor. In the policy code find "Resource" key and add "/*" after the name of the bucket to enable all Save changes
+Select type of policy: S3 Bucket policy Principal: * (Allows all) Actions: Get object Amazon Resource Name (ARN): paste from the Edit bucket policy page in permissions Click Add statement Then Click Generate Policy and Copy the policy into bucket policy editor. In the policy code find "Resource" key and add "/*" after the name of the bucket to enable all Save changes
 
 •Access control list (ACL) within permissions tab: click Edit
 find Everyone (public access) and check List box and save
@@ -216,7 +216,7 @@ find Everyone (public access) and check List box and save
 •Identity and Access Management (IAM) Go back to the AWS Management Console and find IAM in AWS Services
 side menu - User Groups and click Create Group name group "manage-your-app-name" and click Create group
 
-side menu - Policies and click Create Policy Click import managed policy - find AmazonS3FullAccess Copy ARN again and paste into "Resource" add list containint two elements "[ "arn::..", ""arn::../*]" First element is for bucket itself, second element is for all files and foldrs in the bucket
+side menu - Policies and click Create Policy Click import managed policy - find AmazonS3FullAccess Copy ARN again and paste into "Resource" add list containing two elements "[ "arn::..", ""arn::../*]" First element is for bucket itself, second element is for all files and folders in the bucket
 
 Click bottom right Add Tags, than Click bottom right Next: Review Add name of the policy and description
 
@@ -242,7 +242,7 @@ Add user group and add user to the group you created earlier Click Next Tags and
 
 ![awsbucket](https://user-images.githubusercontent.com/65243328/190394148-ae4fd034-9fbe-48a7-9110-c1c00af706ba.JPG)
 
-•Go to heroku to set up enviromental variables
+•Go to heroku to set up environment variables
 open CSV file downloaded earlier and copy each variable into heroku Settings
 
 AWS_STORAGE_BUCKET_NAME AWS_ACCESS_KEY_ID from csv AWS_SECRET_ACCESS_KEY from csv USE_AWS = True remove DISABLE_COLLECTSTATIC variable from heroku
@@ -266,7 +266,7 @@ To upload the media files to S3 bucket
 
 You can clone this repository directly into you editor by pasting the following command into the terminal: https://github.com/MikaCodez/Divine_Timing
 Or you can save a copy of this directory by clicking the green button " Clone or download" then "Download Zip" and after that extract the Zip file to your folder, change the directory to the directory file location you just created.
-For this project I stored all Stripe secret key in both Heroku setting and Gitpod setting. That way i could still use them for development and production.
+For this project I stored all Stripe secret keys in both Heroku settings and Gitpod settings. That way I could still use them for development and production.
 In settings.py you can set your variables like in the example below
 
 import os
@@ -281,14 +281,14 @@ For more info on how to set up the Stripe keys visit Stripe key.
 •Install all requirements from the requirements.txt file putting this command into your terminal:
 pip3 install -r requirements.txt
 
-•In the terminal in your IDE migrate the models to crete a database using the following commands:
+•In the terminal in your IDE migrate the models to create a database using the following commands:
 python3 manage.py makemigrations
 python3 manage.py migrate
 
 •Load the data fixture (Categories, Specials, Products) in that order using the following command in the terminal
 python3 manage.py loaddata <fixture name>
   
-•Create a superuser, it will alow you to have access to the admin panel. you need a username, an email, a password. Note the password won't display in the terminal but will be registered.
+•Create a superuser, it will allow you to have access to the admin panel. you need a username, an email, a password. Note the password won't display in the terminal but will be registered.
  
 python3 manage.py createsuperuser
   
@@ -299,7 +299,7 @@ python3 manage.py runserver
   
 Heroku Deployment
 
-In order for Heroku to work properly, the local deployment steps are required. You will also need to have installed gunicorn, dj-database-url and psycopg. All of those are already in the project requirements.txt, but for future project they are essentials for Heroku to function properly.
+In order for Heroku to work properly, the local deployment steps are required. You will also need to have installed gunicorn, dj-database-url and psycopg. All of those are already in the project requirements.txt, but for future projects they are essentials for Heroku to function properly.
 
 •Create a requirements.txt file, which will contains the list of dependencies, using the following command in the terminal:
 pip3 freeze > requirements.txt
@@ -323,7 +323,7 @@ In the Heroku settings click on Reveal Config Vars and set the following variabl
 ![image](https://user-images.githubusercontent.com/65243328/190397249-ce5fd201-c52d-4bc7-91d1-9fbef0003e74.png)
 
 
-Copy DATABASE_URL's value(Postrgres database URL) from the Config Vars and temporary paste it into the default database in settings.py. 
+Copy DATABASE_URL's value(Postgres database URL) from the Config Vars and temporarily paste it into the default database in settings.py. 
 You can temporary comment out the current database settings code and just paste the following in settings.py:
   
 
@@ -335,11 +335,11 @@ Also make sure to remember your Stripe keys are set in settings.py
 
 
   
-This is just a temporary set up that allows to make all the migrations required for our data in our DB to be transfer to Heroku POstgres. You shouldn't commit and push at this stage for security reason.
+This is just a temporary setup that allows us to make all the migrations required for our data in our DB to be transferred to Heroku POstgres. You shouldn't commit and push at this stage for security reasons.
 
-Here you can now follow the exact steps, 4, 5 and 6 as explain in local deployment.
+Here you can now follow the exact steps, as explained in local deployment.
 
-You can remove the POstgres URL form you settings and uncomment the default DATABASE code form your settings.
+You can remove the POstgres URL from your settings and uncomment the default DATABASE code from your settings.
 
 Add your heroku app url to ALLOWED_HOST in the settings file and also include local host.
 
@@ -352,9 +352,8 @@ Click Enable automatic Deployment
 ![herokugit](https://user-images.githubusercontent.com/65243328/190390292-1f8217cb-f025-4892-b588-58fbb5498bbd.JPG)
 
 
-Now you you run git push in the terminal, it will push to Github and Heroku.
+Now you run git push in the terminal, it will push to Github and Heroku.
 After your app has been successfully deployed you can view you project by clicking on open app
-
 
 
 ## Technologies Used
