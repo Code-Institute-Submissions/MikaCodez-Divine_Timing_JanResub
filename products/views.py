@@ -64,12 +64,14 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-    comments = ProductComment.objects.filter(product=product)
+    comments = ProductComment.objects.filter(product=product).order_by('date_added')
+    previous_comments = None
     print("comments",comments)
     
     context = {
         "product": product,
-        "comments": comments
+        "comments": comments,
+        "previous_comments": previous_comments,
     }
 
     return render(request, "products/product_detail.html", context)
