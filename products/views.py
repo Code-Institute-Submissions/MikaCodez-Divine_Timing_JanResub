@@ -151,8 +151,20 @@ def delete_product(request, product_id):
 
 
 @login_required
-def product_comment(request):
+def product_comment(request, product_id):
     """ Add a comment to individual product """
+
+    if request.method == "POST":
+        form = ProductCommentForm(request.POST)
+        if form.is_valid():
+            messages.success(request, "Successfully added comment!")
+            return redirect(reverse("product_detail", args=[product_id]))
+        else:
+            messages.error(
+                request, ("Failed to add comment." "Please ensure the form is valid.")
+            )
+    else:
+        form = ProductCommentForm()
   
     template = "products/product_comment.html"
     context = {
