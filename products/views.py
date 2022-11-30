@@ -153,10 +153,15 @@ def delete_product(request, product_id):
 @login_required
 def product_comment(request, product_id):
     """ Add a comment to individual product """
+    product = get_object_or_404(Product, id=product_id)
 
     if request.method == "POST":
         form = ProductCommentForm(request.POST)
         if form.is_valid():
+            new_form = form.save(commit=False)
+            new_form.author = request.user
+            new_form.product = product
+            new_form.save()
             messages.success(request, "Successfully added comment!")
             return redirect(reverse("product_detail", args=[product_id]))
         else:
@@ -169,6 +174,7 @@ def product_comment(request, product_id):
     template = "products/product_comment.html"
     context = {
         "form": ProductCommentForm,
+        'product': product
     }
 
     return render(request, template, context)

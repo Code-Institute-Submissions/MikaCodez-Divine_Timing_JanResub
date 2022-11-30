@@ -23,7 +23,7 @@
     <div class="row mt-3 custom-margin">
         <div class="col-12 col-md-6 offset-md-3">
             <!-- Add Comment form -->
-            <form action="{% url 'product_comment' %}" method="POST" class="form" enctype="multipart/form-data">
+            <form action="{% url 'product_comment' product.id %}" method="POST" class="form" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div class="text-center">

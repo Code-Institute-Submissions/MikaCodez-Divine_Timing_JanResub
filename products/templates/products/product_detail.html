@@ -109,14 +109,14 @@
                     </form>
                     <div class="form-check form-check-inline mr-0">
                         {% if user.is_authenticated %}
-                        <form method="POST" action="{% url 'product_comment' %}" class="form mb-2" enctype="multipart/form-data">
+                        <form method="POST" action="{% url 'product_comment' product.id %}" class="form mb-2" enctype="multipart/form-data">
                             {% csrf_token %}
                             {{ form | crispy }}
                             <div class="text-right">
                                 <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
                                 <button class="btn btn-black rounded-0" type="submit">Add Comment</button>    
                             </div>
-                            {% for comment in comments %}
+                            
                             <br><br><br>
                             <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                                 <h3>Comments</h3>
@@ -141,6 +141,7 @@
                                         <tbody>
                                             
                                             <tr>
+                                                {% for comment in comments %}
                                                 <th scope="row" class="d-none d-md-table-cell">{{ comment.date_added }}</th>
                                                 <td class="d-none d-md-table-cell">{{ comment.author }}</td>
                                                 <td>{{ comment.product_comment }}</td>
