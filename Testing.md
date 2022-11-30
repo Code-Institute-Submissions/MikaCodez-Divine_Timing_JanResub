@@ -124,6 +124,18 @@ Only issues seem to be facing at the moment is the rendering of comments on indi
 Hopefully will have this operating normally when 2nd edition of site is launched.
 
   ![addcomment 2](https://user-images.githubusercontent.com/65243328/190250225-65c27c17-763d-4346-bffe-159e3118fa09.JPG)
+  
+
+## Update ##
+Issue with comments section has now been fixed and comments are now operating as normal on the frontend side and on the backend side.
+
+![image](https://user-images.githubusercontent.com/65243328/204845881-0260d175-eb13-4224-b271-476318f64324.png)
+
+Newsletter Pop-Up Form now working, as implemented from the code of Mailchimp.
+
+![image](https://user-images.githubusercontent.com/65243328/204848189-b2c99d5a-dd4c-42d4-a4a2-90050b45333d.png)
+
+
 
 
 [Back to Readme](https://github.com/MikaCodez/Divine_Timing/blob/main/README.md)
