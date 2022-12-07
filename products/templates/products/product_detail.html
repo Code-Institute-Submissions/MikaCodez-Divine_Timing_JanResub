@@ -116,6 +116,17 @@
                                 <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
                                 <button class="btn btn-black rounded-0" type="submit">Add Comment</button>    
                             </div>
+                        </form>
+                        <br><br><br><br>
+                    
+                    <form method="POST" action="{% url 'add_to_wishlist' product.id %}" class="form mb-2" enctype="multipart/form-data">
+                        {% csrf_token %}
+                    <div class="form-row">
+                            <input type="submit" action="{% url 'add_to_wishlist' product.id %}"id="id_qty_{{ product.id }}" class="btn btn-outline-black rounded-0" value="Add to Wishlist">
+                        </div>
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                    </div>
+                </form>
                             
                             <br><br><br>
                             <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
