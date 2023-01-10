@@ -1,0 +1,491 @@
+[{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "watches",
+        "friendly_name": "Watches"
+    }
+}, {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "watch_straps",
+        "friendly_name": "Watch Straps"
+    }
+}, {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "clearance",
+        "friendly_name": "Clearance"
+    }
+}, {
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "name": "deals",
+        "friendly_name": "Deals"
+    }
+}, {
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "name": "new_arrivals",
+        "friendly_name": "New Arrivals"
+    }
+}, {
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+        "name": "glasses",
+        "friendly_name": "Glasses"
+    }
+}, {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "category": 1,
+        "sku": "pp5001340155",
+        "name": "Helix Purple Digital",
+        "description": "Stylish Purple Digital Watch that allows you with your fitness needs. Also Waterproof",
+        "has_sizes": false,
+        "price": "200.00",
+        "rating": "4.60",
+        "image_url": "https://drive.google.com/file/d/1NyFBudsl14kMoYZn9hwv6h4W3eiD5304/view?usp=sharing",
+        "image": "product-1_VZpDE8j.png"
+    }
+}, {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "category": 2,
+        "sku": "pp5001600425",
+        "name": "Magna Vista",
+        "description": "Classic Black watch with exemplarary style for casual and business needs",
+        "has_sizes": false,
+        "price": "150.00",
+        "rating": "4.60",
+        "image_url": "https://drive.google.com/file/d/1MW3oSAr6DV9FlvsWFhBmjrJT5O6vc7e7/view?usp=sharing",
+        "image": "product-2_AlwggiQ.png"
+    }
+}, {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "category": 1,
+        "sku": "pp5001730010",
+        "name": "Helix Arancia",
+        "description": "Stylish Orange Digital Watch that allows you with your fitness needs. Also Waterproof",
+        "has_sizes": false,
+        "price": "200.00",
+        "rating": "4.70",
+        "image_url": "https://drive.google.com/file/d/1kgZy2gY-9E4IiK7ISSQ-Mtc0LPbc18dL/view?usp=sharing",
+        "image": "product-3_yQsNIqR.png"
+    }
+}, {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "category": 1,
+        "sku": "pp5001890157",
+        "name": "Nero Ice",
+        "description": "Black Digital watch for all your needs.",
+        "has_sizes": false,
+        "price": "200.00",
+        "rating": "3.00",
+        "image_url": "https://drive.google.com/file/d/1IBbxa4Bo-xwkxjs6SqjlFSsm3dZTLPwH/view?usp=sharing",
+        "image": "product-4_PdjIQf0.png"
+    }
+}, {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "category": 1,
+        "sku": "pp5002111605",
+        "name": "White Ice",
+        "description": "Beautifully hand crafted White Ice Digital watch that is timeless.",
+        "has_sizes": false,
+        "price": "232.99",
+        "rating": "5.00",
+        "image_url": "https://drive.google.com/file/d/1N_fQ2RERUEKXD8_CLLw-CesGrrSQ9f3R/view?usp=sharing",
+        "image": "final-cta_IhzUCx2.png"
+    }
+}, {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "category": 1,
+        "sku": "pp5002260206",
+        "name": "Seiko coutura mens radio sync solor chonograph",
+        "description": "Impressive design from Seiko, Timeless chronograph piece.",
+        "has_sizes": false,
+        "price": "300.99",
+        "rating": "4.70",
+        "image_url": "https://au.firstclasswatches.com/thumbnails/images/products/product37464-0-4725_cropped.jpeg.thumb_FFFCFA_774x1000.jpg",
+        "image": "seiko-coutura-mens-radio-sync-solor-chonograph-watch-ssg010_2PbYUba.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "category": 1,
+        "sku": "pp5002440521",
+        "name": "Rolex date just automatic Diamond silver",
+        "description": "Diamond Silver classic rolex.",
+        "has_sizes": false,
+        "price": "5900.00",
+        "rating": "4.40",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/r/o/rolex-lady-datejust-silver-roman-diamond-dial-automatic-watch-279383srdj.jpg?width=546&height=546",
+        "image": "preowned-rolex-datejust-automatic-diamond-silver-dial-mens-watch-16233-sjdj_1_88Urpal.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "category": 1,
+        "sku": "pp5002601115",
+        "name": "Diesel Crusher digital mens watch",
+        "description": "Diesel Digital watch for all your business needs.",
+        "has_sizes": false,
+        "price": "360.99",
+        "rating": "4.50",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/d/i/diesel-crusher-digital-mens-watch-dz1893.jpg?width=546&height=546",
+        "image": "diesel-crusher-digital-mens-watch-dz1893_a3UREFX.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "category": 1,
+        "sku": "pp5002690715",
+        "name": "Hublot limited edition big bang epremier-league digital mens watch",
+        "description": "Hublot limited edition premier league watch.",
+        "has_sizes": false,
+        "price": "4669.99",
+        "rating": "4.70",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/h/u/hublot-limited-edition-big-bang-e-premier-league-digital-mens-watch-440nx1100nrplw21-440nx1100nrplw21.jpg?width=546&height=546",
+        "image": "hublot-limited-edition-big-bang-e-premier-league-digital-mens-watch-.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "category": 1,
+        "sku": "pp5002701115",
+        "name": "Rolex submariner kermit automatic chronometer black dial",
+        "description": "Rolex submariner chronometer watch. For the slick look.",
+        "has_sizes": false,
+        "price": "33000.99",
+        "rating": "4.40",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/r/o/rolex-submariner-blue-dial-stainless-steel-and-18k-yellow-gold-bracelet-automatic-mens-watch-126613lbblso.jpg?width=546&height=546",
+        "image": "rolex-submariner-kermit-automatic-chronometer-black-dial-mens-watch-126610lvbkso_UrsizC9.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "category": 1,
+        "sku": "pp5002761055",
+        "name": "Bulova-marine-star-automatic-silver-dial",
+        "description": "Stylish Marine style watch.",
+        "has_sizes": false,
+        "price": "290.99",
+        "rating": "3.00",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/b/u/bulova-marine-star-automatic-silver-dial-mens-watch-98a226.jpg?width=546&height=546",
+        "image": "bulova-marine-star-automatic-silver-dial-mens-watch-98a226_DLTZNab.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "category": 1,
+        "sku": "pp5002820069",
+        "name": "Rolex sea dweller automatic chronometer black-dial",
+        "description": "Marine Style rolex.",
+        "has_sizes": false,
+        "price": "19000.99",
+        "rating": "4.60",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/r/o/rolex-sea-dweller-automatic-chronometer-black-dial-watch-126603bkso--.jpg?width=546&height=546",
+        "image": "rolex-sea-dweller-automatic-chronometer-black-dial-watch-126603bkso--_U9ORtnR.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "category": 1,
+        "sku": "pp5002820147",
+        "name": "Seiko chronograph alarm quartz",
+        "description": "Classic Seiko black watch",
+        "has_sizes": false,
+        "price": "200.00",
+        "rating": "3.20",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/76ca28a553ae7feaf63d5d8d3b95ff3e/s/e/seiko-chronograph-alarm-quartz-black-dial-mens-watch-spc255p1_1.jpg?width=546&height=546",
+        "image": "seiko-chronograph-alarm-quartz-black-dial-mens-watch-spc255p1_1_1LtZbzs.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "category": 1,
+        "sku": "pp5002910572",
+        "name": "Rolex yachtmaster-ii chronograph automatic white",
+        "description": "Classic Silver and blue Chronograph rolex. Will Complement any Suit",
+        "has_sizes": false,
+        "price": "26565.99",
+        "rating": "4.70",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/r/o/rolex-yachtmaster-ii-chronograph-automatic-white-dial-mens-steel-and-18k-everose-gold-watch-1166810002.jpg?width=546&height=546",
+        "image": "rolex-yachtmaster-ii-chronograph-automatic-white-dial-mens-steel-and-18k-everose-gold-watch.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "category": 1,
+        "sku": "pp5002990740",
+        "name": "Rolex automatic chronometer diamond blue dial ladies watch",
+        "description": "Stylish Blue Diamond watch",
+        "has_sizes": false,
+        "price": "4898.99",
+        "rating": "4.80",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/76ca28a553ae7feaf63d5d8d3b95ff3e/r/o/rolex-datejust-36-blue-jubilee-diamond-dial-automatic-unisex-oyster-watch-126284bljdo.jpg?width=546&height=546",
+        "image": "preowned-rolex-automatic-chronometer-diamond-blue-dial-ladies-watch-69174pdj_u7Ar3jG.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+        "category": 1,
+        "sku": "pp5003050248",
+        "name": "Rolex automatic diamond silver",
+        "description": "white gold classic Rolex",
+        "has_sizes": false,
+        "price": "6565.99",
+        "rating": "4.40",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/p/r/preowned-rolex-datejust-automatic-diamond-white-dial-ladies-watch-69173wrj.jpg?width=546&height=546",
+        "image": "preowned-rolex-datejust-automatic-diamond-silver-dial-mens-watch-16233-sjdj_1_HJHzOkE.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+        "category": 1,
+        "sku": "pp5003070787",
+        "name": "Rolex champagne dial president bracelet ladies watch",
+        "description": "Champagne Stylish Ladies watch",
+        "has_sizes": false,
+        "price": "9333.99",
+        "rating": "4.40",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/76ca28a553ae7feaf63d5d8d3b95ff3e/r/o/rolex-datejust-31-champagne-diamond-dail-ladies-18kt-yellow-gold-president-watch-278288cdp.jpg?width=546&height=546",
+        "image": "preowned-rolex-datejust-automatic-diamond-silver-dial-mens-watch-16233-sjdj_1_Jugcj6w.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+        "category": 6,
+        "sku": "pp5003090182",
+        "name": "Ray ban aviator classic green sunglasses",
+        "description": "Exquisite Ray Ban Sun glasses to shutdown the Summer with.",
+        "has_sizes": false,
+        "price": "159.99",
+        "rating": "4.80",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/r/a/ray-ban-unisex-green-aviator-sunglasses-rb3025-919131-55_1.jpg?width=546&height=546",
+        "image": "ray-ban-aviator-classic-green-classic-g15-unisex-sunglasses-rb3025-919031-55_QQyuj95.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+        "category": 6,
+        "sku": "pp5003090186",
+        "name": "Ray ban green classic square sunglasses",
+        "description": "Classic green Ray-bans.",
+        "has_sizes": false,
+        "price": "160.99",
+        "rating": "5.00",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/r/a/ray-ban-unisex-green-aviator-sunglasses-rb3025-919131-55_1.jpg?width=546&height=546",
+        "image": "ray-ban-green-classic-square-sunglasses-rb3916-130331-52_XSo2hvc.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+        "category": 6,
+        "sku": "pp5003161326",
+        "name": "Ray ban hexagonal blue gradient aviator sunglasses",
+        "description": "Blue Hue Raybans for any occasion.",
+        "has_sizes": false,
+        "price": "120.99",
+        "rating": "4.70",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/r/a/ray-ban-hexagonal-blue-gradient-aviator-sunglasses-rb3548n-91233m54--.jpg?width=546&height=546",
+        "image": "ray-ban-hexagonal-blue-gradient-aviator-sunglasses-rb3548n-91233m54--_4HJsOxK.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+        "category": 1,
+        "sku": "pp5003230723",
+        "name": "Bulova marine star chronograph blue dial",
+        "description": "Beautiful piece by Bulova. Compliments a gray or deep blue suit.",
+        "has_sizes": false,
+        "price": "260.99",
+        "rating": "4.30",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/b/u/bulova-marine-star-chronograph-blue-dial-men_s-watch-97b168.jpg?width=546&height=546",
+        "image": "bulova-marine-star-chronograph-blue-dial-men_s-watch-97b168_CTPdwAq.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+        "category": 1,
+        "sku": "pp5003270936",
+        "name": "Diesel chronograph quartz digital black dial mens watch",
+        "description": "Fantastic Diesel watch to wear with any luxury attire",
+        "has_sizes": false,
+        "price": "69.50",
+        "rating": "5.00",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/d/i/diesel-chronograph-quartz-digital-black-dial-mens-watch-dz4519.jpg?width=546&height=546",
+        "image": "diesel-chronograph-quartz-digital-black-dial-mens-watch-dz4519_WL4x1D5.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+        "category": 1,
+        "sku": "pp5003360384",
+        "name": "Black Fire Watch",
+        "description": "Our state of the art hand crafted Black fire watch for all your needs.",
+        "has_sizes": false,
+        "price": "150.00",
+        "rating": "4.80",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+        "image": "blacksmartfire.avif"
+    }
+}, {
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+        "category": 6,
+        "sku": "pp5003440111",
+        "name": "Gucci green round ladies sunglasses",
+        "description": "Ladies Classic Gucci glasses.",
+        "has_sizes": false,
+        "price": "199.99",
+        "rating": "3.80",
+        "image_url": "https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/g/u/gucci-green-round-ladies-sunglasses-gg0035sn-002-54.jpg?width=546&height=546",
+        "image": "gucci-green-round-ladies-sunglasses-gg0035sn-002-54_YXS0xKn.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+        "category": 2,
+        "sku": "pp5003540313",
+        "name": "Silicone Rubber Strap Apple Watch",
+        "description": "Apple watch straps in a variety of colours",
+        "has_sizes": false,
+        "price": "19.99",
+        "rating": "3.00",
+        "image_url": "https://strapscocom-ylw34hnr.netdna-ssl.com/wp-content/uploads/2020/12/a.r17.1-Gallery-Black-StrapsCo-Silicone-Rubber-Waffle-Grooved-Band-Strap-for-Apple-Watch-38mm-40mm-42mm-44mm-1.jpg",
+        "image": "a.r1-Gallery-Black-StrapsCo-Premium-Rubber-Strap-for-Apple-Watch-Series-123456-680x680_7lOxYvd.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+        "category": 2,
+        "sku": "pp5003560513",
+        "name": "Black StrapsCo Silicone Rubber Waffle Grooved Band Strap for Apple Watch",
+        "description": "Variety of rubber waffle grooved apple watch straps.",
+        "has_sizes": false,
+        "price": "19.99",
+        "rating": "4.40",
+        "image_url": "https://strapscocom-ylw34hnr.netdna-ssl.com/wp-content/uploads/2020/12/a.r17.1-Gallery-Black-StrapsCo-Silicone-Rubber-Waffle-Grooved-Band-Strap-for-Apple-Watch-38mm-40mm-42mm-44mm-1.jpg",
+        "image": "a.r17.1-Gallery-Black-StrapsCo-Silicone-Rubber-Waffle-Grooved-Band-Strap-for-Apple-Watch-.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+        "category": 2,
+        "sku": "pp5003560948",
+        "name": "Silver Bracelet digital straps",
+        "description": "Silver StrapsCo-Alloy Metal Link Watch Bracelet Band with Rhinestones for Apple Watch Series.",
+        "has_sizes": false,
+        "price": "29.99",
+        "rating": "5.00",
+        "image_url": "https://strapscocom-ylw34hnr.netdna-ssl.com/wp-content/uploads/2019/04/a.m19.ss-Gallery-Silver-StrapsCo-Stainless-Steel-Link-Watch-Bracelet-Band-Strap-for-Apple-Watch-Series-1234-38mm-40mm-42mm-44mm.jpg",
+        "image": "a.m33.ss-Gallery-Silver-StrapsCo-Alloy-Metal-Link-Watch-Bracelet.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+        "category": 2,
+        "sku": "pp5003560948",
+        "name": "Silver Bracelet digital straps",
+        "description": "Silver StrapsCo-Alloy Metal Link Watch Bracelet Band with Rhinestones for Apple Watch Series.",
+        "has_sizes": false,
+        "price": "29.99",
+        "rating": "5.00",
+        "image_url": "https://strapscocom-ylw34hnr.netdna-ssl.com/wp-content/uploads/2019/04/a.m19.ss-Gallery-Silver-StrapsCo-Stainless-Steel-Link-Watch-Bracelet-Band-Strap-for-Apple-Watch-Series-1234-38mm-40mm-42mm-44mm.jpg",
+        "image": "a.m1.ss-Gallery-Silver-StrapsCo-Stainless-Steel-Link-Watch-Band-Strap-for-Apple-Watch.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+        "category": 2,
+        "sku": "pp5003560948",
+        "name": "Silver Stainless steel digital straps",
+        "description": "Silver StrapsCo Flat Stainless Steel Band for Apple Watch.",
+        "has_sizes": false,
+        "price": "19.99",
+        "rating": "5.00",
+        "image_url": "https://strapscocom-ylw34hnr.netdna-ssl.com/wp-content/uploads/2019/04/a.m1.ss-Gallery-Silver-StrapsCo-Stainless-Steel-Link-Watch-Band-Strap-for-Apple-Watch-Series-1234-38mm-40mm-42mm-44mm.jpg",
+        "image": "a.m25-Gallery-Silver-StrapsCo-Flat-Stainless-Steel-Band-for-Apple-Watch-441x441_ciLgEwX.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+        "category": 5,
+        "sku": "pp5001630425",
+        "name": "Audemar Piguet  Royal Oak 41 Double Balance Wheel Openworked",
+        "description": "The Royal Oak 15407 was introduced at SIHH 2016. It features an open-worked movement with two superimposed balance wheels in the typical Royal Oak case",
+        "has_sizes": false,
+        "price": "220000.00",
+        "rating": "0.05",
+        "image_url": "https://superwatchman.com/wp-content/uploads/2020/12/img-8076_15407st-oo-1220st-01-9a.png",
+        "image": "img-8076_15407st-oo-1220st-01-9a.png"
+    }
+}, {
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+        "category": 3,
+        "sku": "pp5001650425",
+        "name": "ZELDA",
+        "description": "A shape that suits most people, both men and women and is cool with a more powerful temple.",
+        "has_sizes": false,
+        "price": "169.00",
+        "rating": "0.03",
+        "image_url": "https://www.monkeyglasses.com/media/opti_image/webp/catalog/product/cache/d1ae92217484b918aa62b59e66df8a7b/z/e/zelda04s_orange_twist_2.webp",
+        "image": "zelda04s_orange_twist_2.webp"
+    }
+}, {
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+        "category": 4,
+        "sku": "pp5001660425",
+        "name": "Timex Gold release",
+        "description": "PAC-MAN burst onto the arcade scene and helped create a whole new kind of entertainment way back in 1980. That was shortly after we introduced some of the first digital watches for mass production, marking a turning point both in timekeeping and the future of wristwatch design.",
+        "has_sizes": false,
+        "price": "90.00",
+        "rating": "0.02",
+        "image_url": "https://m.media-amazon.com/images/I/715IsE1mV5L._UY679_.jpg",
+        "image": "715IsE1mV5L._UY679_.jpg"
+    }
+}]
