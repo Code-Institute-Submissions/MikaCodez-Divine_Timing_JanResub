@@ -27,6 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
+
 ALLOWED_HOSTS = ['divinetiming.herokuapp.com', 'localhost']
 
 
@@ -226,8 +227,8 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 FREE_DELIVERY_THRESHOLD = 250
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'gbp'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51LJFjoGWRsXFTFWwLYq2yqOTpQ52ZH3djhjtPW0Q2NgGM6qqARwlj1su0CdXCgG0FkWsWfopTAILVfgXM1TyEIlx00RnzLb3Hl')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51LJFjoGWRsXFTFWw6bpeuN2L1NwSRzxNEEUbj8cZSQdXA4VuoMUfKNNjleIDNljALHh4gwsorChCyNw0lCtpy4Ji00ThWzlvDh')
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 if 'DEVELOPMENT' in os.environ:
