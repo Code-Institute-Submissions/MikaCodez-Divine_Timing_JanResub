@@ -186,10 +186,11 @@
         <form method="POST">
         {% csrf_token %}
         <div class="newsletter-email">
-            <input type="text" class="newsletter-input">
-            <a href="/newsletter/subscribe/{{subscriber.id}}/">
+            <!-- <input type="text" class="newsletter-input">
+            <a href="/newsletter/subscribe/{{subscriber.id}}/"> -->
+                {{ form }}
             <button class="btn newsletter-btn" type="submit">Sign Up</button>
-            </a>
+            <!-- </a> -->
         </div>
         </form>
     </div> <!-- .newsletter-container end -->
