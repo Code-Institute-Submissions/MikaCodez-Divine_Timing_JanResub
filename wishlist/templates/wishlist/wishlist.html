@@ -37,7 +37,7 @@
                                 <p class="text-muted mb-5">A summary of your Wish List contents is below</p>
                             </div>
                         </div>
-                        {% for item in wishlist_items %}
+                        {% for item in wishlist.wishlist_items.all %}
                             <div class="row">
                                 <div class="col-12 col-sm-6 mb-2">
                                     {% include "wishlist/product-image.html" %}
@@ -72,7 +72,7 @@
                                 </tr>
                             </thead>
 
-                            {% for item in wishlist_items %}
+                            {% for item in wishlist.wishlist_items.all %}
                                 <tr>
                                     <td class="p-3 w-25">
                                         {% include "wishlist/product-image.html" %}
