@@ -9,7 +9,7 @@ class wishlist(models.Model):
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     products = models.ManyToManyField(Product,
-                                      through="wishlistitem",
+                                      through="wishlistItem",
                                       related_name='product_wishlists')
 
     def __str__(self):
