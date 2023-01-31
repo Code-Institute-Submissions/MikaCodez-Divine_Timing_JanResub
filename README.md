@@ -136,12 +136,15 @@ Allowing Admins to add/edit/delete products as they see fit.
 
 ![prodmanage2](https://user-images.githubusercontent.com/65243328/184503543-0320b9ed-02fb-4349-8341-d7ed8090c69b.JPG)
 
+Newsletter
 
-## Future Features
-Future Features left to implement are a confirmation email sent back to users once they are subscibed to the newsletter and to
+A pop-up notification is sent back to users once they are subscibed to the newsletter and to
 receive monthly newsletters from the Divine Timing team regarding products, promotions and news.
 
 ![newslet](https://user-images.githubusercontent.com/65243328/190248755-79b2fd43-c5fa-411b-bd6b-3730ad5f9351.JPG)
+
+## Future Features
+Only future features left to implement at the moment is to have Wishlist functioning at a high level, as it is currently not rendering to the page but it is registering wishlist orders to the database.
 
 
 ## SEO and Web marketing
