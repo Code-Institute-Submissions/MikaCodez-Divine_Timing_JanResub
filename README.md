@@ -143,8 +143,11 @@ receive monthly newsletters from the Divine Timing team regarding products, prom
 
 ![newslet](https://user-images.githubusercontent.com/65243328/190248755-79b2fd43-c5fa-411b-bd6b-3730ad5f9351.JPG)
 
-## Future Features
-Only future features left to implement at the moment is to have Wishlist functioning at a high level, as it is currently not rendering to the page but it is registering wishlist orders to the database.
+Wishlist
+
+An application built-in to the Eccomerce app for Users to be able to Add products to their Wishlist.
+
+![image](https://user-images.githubusercontent.com/65243328/215777918-41cdd208-b1b6-402a-b59a-0ae1969a1fad.png)
 
 
 ## SEO and Web marketing
