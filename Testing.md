@@ -137,7 +137,7 @@ Newsletter Pop-Up Form now working, as implemented from the code of Mailchimp.
 
 WishList template now in place with option to allow users to Add to wishlist
 
-![wishlist test](https://user-images.githubusercontent.com/65243328/206454634-8e2926c0-2096-4463-abb5-dd52bf2715f7.JPG)
+![image](https://user-images.githubusercontent.com/65243328/215779117-e2ab2c8d-97f3-4663-b77d-0024e90d6145.png)
 
 Purchase Functionality also working fine.
 ![purchase new test](https://user-images.githubusercontent.com/65243328/206454788-68bbce2d-7940-4e88-9103-31bccba5ff93.JPG)
